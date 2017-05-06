@@ -1,5 +1,5 @@
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 
 .cube__side,
@@ -200,6 +200,114 @@ body {
 .no-js .cube:not(.cube--inactive):nth-child(32) {
 	background-image: url(../img/6.png);
 	color: #ff5722;
+}
+
+.cube:not(.cube--inactive):nth-child(33) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(33) {
+	background-image: url(../img/13.png);
+	color: #ffeb3b;
+}
+
+.cube:not(.cube--inactive):nth-child(34) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(34) {
+	background-image: url(../img/14.png);
+	color: #ffc107;
+}
+
+.cube:not(.cube--inactive):nth-child(35) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(35) {
+	background-image: url(../img/15.png);
+	color: #ff9800;
+}
+
+.cube:not(.cube--inactive):nth-child(36) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(36) {
+	background-image: url(../img/16.png);
+	color: #ff5722;
+}
+
+.cube:not(.cube--inactive):nth-child(37) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(37) {
+	background-image: url(../img/17.png);
+	color: #f44336;
+}
+
+.cube:not(.cube--inactive):nth-child(38) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(38) {
+	background-image: url(../img/18.png);
+	color: #e91e63;
+}
+
+.cube:not(.cube--inactive):nth-child(39) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(39) {
+	background-image: url(../img/19.png);
+	color: #9c27b0;
+}
+
+.cube:not(.cube--inactive):nth-child(40) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(40) {
+	background-image: url(../img/20.png);
+	color: #673ab7;
+}
+
+.cube:not(.cube--inactive):nth-child(41) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(41) {
+	background-image: url(../img/1.png);
+	color: #f44336;
+}
+
+.cube:not(.cube--inactive):nth-child(42) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(42) {
+	background-image: url(../img/2.png);
+	color: #e91e63;
+}
+
+.cube:not(.cube--inactive):nth-child(43) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(43) {
+	background-image: url(../img/3.png);
+	color: #9c27b0;
+}
+
+.cube:not(.cube--inactive):nth-child(44) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(44) {
+	background-image: url(../img/4.png);
+	color: #673ab7;
+}
+
+.cube:not(.cube--inactive):nth-child(45) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(45) {
+	background-image: url(../img/5.png);
+	color: #3f51b5;
+}
+
+.cube:not(.cube--inactive):nth-child(46) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(46) {
+	background-image: url(../img/6.png);
+	color: #2196f3;
+}
+
+.cube:not(.cube--inactive):nth-child(47) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(47) {
+	background-image: url(../img/7.png);
+	color: #03a9f4;
+}
+
+.cube:not(.cube--inactive):nth-child(48) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(48) {
+	background-image: url(../img/8.png);
+	color: #00bcd4;
+}
+
+.cube:not(.cube--inactive):nth-child(49) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(49) {
+	background-image: url(../img/9.png);
+	color: #009688;
+}
+
+.cube:not(.cube--inactive):nth-child(50) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(50) {
+	background-image: url(../img/10.png);
+	color: #4caf50;
 }
 
 .cube--inactive .cube__side,
