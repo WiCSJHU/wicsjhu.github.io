@@ -46,7 +46,7 @@ p {
 	position: relative;
 	display: -webkit-flex;
 	display: flex;
-	overflow: hidden;
+	overflow: scroll;
 	-webkit-flex-direction: column;
 	flex-direction: column;
 	-webkit-justify-content: space-around;
