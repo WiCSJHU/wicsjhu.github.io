@@ -41,23 +41,21 @@ p {
 .container {
 	width: 100vw;
 	height: 100vh;
-	padding: 15%;
+	padding-right: 15%;
+	padding-bottom: 5%;
+	padding-top: 5%;
+	padding-left: 15%;
 	border: 10px solid #fff;
 	position: relative;
-	display: -webkit-flex;
-	display: flex;
+	vertical-align: middle;
 	overflow: scroll;
-	-webkit-flex-direction: column;
-	flex-direction: column;
-	-webkit-justify-content: space-around;
-	justify-content: space-around;
-	-webkit-align-items: center;
 	align-items: center;
 }
 
 /* Content */
 .content {
 	position: relative;
+	padding-top: 5%;
 }
 
 /* Button */
