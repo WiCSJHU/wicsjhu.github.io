@@ -4,23 +4,113 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>The OlympiCS | 2018</title>
-		<meta name="description" content="ACM/WiCS OlympiCS at JHU" />
-		<meta name="keywords" content="ACM, WiCS, JHU, Johns Hopkins, Olympics, computer science, CS, The OlympiCS" />
+		<title>JHU OlympiCS</title>
+		<meta name="description" content="ACM/WiCS at Johns Hopkins University presents the second annual OlympiCS: a day-long event of fun for CS undergrads" />
+		<meta name="keywords" content="JHU, Hopkins, CS, ACM, WiCS, OlympiCS" />
+		<meta name="author" content="ACM/WiCS @JHU" />
+		<link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/slideshow.css" />
+		<link rel="stylesheet" type="text/css" href="css/slideshow_layouts.css" />
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  		<style>
+			.ie-message { display: inline-block; }
+  		</style>
+		<![endif]-->
+		<script>document.documentElement.className = 'js';</script>
 	</head>
 	<body>
-		<div class="container">
-			<header class="header"><h1><span>ACM/WiCS presents:</span>The Olympi<a style="color: #000">CS</a></h1></header>
-			<!-- description -->
-			<div class="content">
-			<p>Get ready for JHU's 2nd annual OlympiCS: a day-long event for teams of CS undergrads to compete and earn points towards some fun prizes.</p>
-			<p>Join our planning committee now! (Sign-ups to participate in the event will begin in February 2018.)</p>
-			<!-- action button -->
-			<div class="content">
-				<center><button class="action action--hidden"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdx6BbUX62h1eH5bfdYfwF0p5AhOU-1CPHaDCK40rJT0O4sug/viewform" target="blank">Join the planning committee</span></a></button></center>
+		<svg class="hidden">
+			<defs>
+				<symbol id="icon-arrow" viewBox="0 0 24 24">
+					<title>arrow</title>
+					<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+				</symbol>
+				<symbol id="icon-drop" viewBox="0 0 24 24">
+					<title>drop</title>
+					<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
+				</symbol>
+				<symbol id="icon-prev" viewBox="0 0 100 50">
+					<title>prev</title>
+					<polygon points="5.4,25 18.7,38.2 22.6,34.2 16.2,27.8 94.6,27.8 94.6,22.2 16.2,22.2 22.6,15.8 18.7,11.8"/>
+				</symbol>
+				<symbol id="icon-next" viewBox="0 0 100 50">
+					<title>next</title>
+					<polygon points="81.3,11.8 77.4,15.8 83.8,22.2 5.4,22.2 5.4,27.8 83.8,27.8 77.4,34.2 81.3,38.2 94.6,25 "/>
+				</symbol>
+				<symbol id="icon-octicon" viewBox="0 0 24 24">
+					<title>octicon</title>
+					<path d="M12,2.2C6.4,2.2,1.9,6.7,1.9,12.2c0,4.4,2.9,8.2,6.9,9.6c0.5,0.1,0.7-0.2,0.7-0.5c0-0.2,0-0.9,0-1.7c-2.8,0.6-3.4-1.4-3.4-1.4C5.6,17.1,5,16.8,5,16.8C4.1,16.2,5,16.2,5,16.2c1,0.1,1.5,1,1.5,1c0.9,1.5,2.4,1.1,2.9,0.8c0.1-0.7,0.4-1.1,0.6-1.3c-2.2-0.3-4.6-1.1-4.6-5c0-1.1,0.4-2,1-2.7C6.5,8.8,6.2,7.7,6.7,6.4c0,0,0.8-0.3,2.8,1C10.3,7.2,11.1,7.1,12,7c0.9,0,1.7,0.1,2.5,0.3c1.9-1.3,2.8-1,2.8-1c0.5,1.4,0.2,2.4,0.1,2.7c0.6,0.7,1,1.6,1,2.7c0,3.9-2.4,4.7-4.6,5c0.4,0.3,0.7,0.9,0.7,1.9c0,1.3,0,2.4,0,2.8c0,0.3,0.2,0.6,0.7,0.5c4-1.3,6.9-5.1,6.9-9.6C22.1,6.7,17.6,2.2,12,2.2z" />
+				</symbol>
+				<!-- From Karen Menezes: https://www.smashingmagazine.com/2015/05/creating-responsive-shapes-with-clip-path/ -->
+				<clipPath id="polygon-clip-rhomboid" clipPathUnits="objectBoundingBox">
+					<polygon points="0 1, 0.3 0, 1 0, 0.7 1" />
+				</clipPath>
+			</defs>
+		</svg>
+		<main>
+			<header class="codrops-header">
+				<nav class="dummy-links">
+					<a class="dummy-links__link dummy-links__link--current" href="#">Home</a>
+					<a class="dummy-links__link" href="https://docs.google.com/forms/d/e/1FAIpQLSdvxT4WXZTDTh23JknNcmEuC46XhvshARvYA_76wpPcXxVBxw/viewform" target="_blank">Sign Up</a>
+					<a class="dummy-links__link" href="https://docs.google.com/forms/d/e/1FAIpQLSdx6BbUX62h1eH5bfdYfwF0p5AhOU-1CPHaDCK40rJT0O4sug/viewform" target="_blank">Volunteer</a>
+				</nav>
+			</header>
+			<div class="slideshow" tabindex="0">
+				<div class="slide slide--layout-1" data-layout="layout1">
+					<div class="slide-imgwrap">
+						<div class="slide__img"><div class="slide__img-inner" style="background-image: url(img/1.jpg);"></div></div>
+						<div class="slide__img"><div class="slide__img-inner" style="background-image: url(img/3.jpg);"></div></div>
+						<div class="slide__img"><div class="slide__img-inner" style="background-image: url(img/4.jpg);"></div></div>
+					</div>
+					<div class="slide__title">
+						<p style="color: #6daee1">ACM/WiCS presents</p>
+						<h3 class="slide__title-main">The OlympiCS</h3>
+						<p class="slide__title-sub">JHU's annual CS games for undergrads! <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvxT4WXZTDTh23JknNcmEuC46XhvshARvYA_76wpPcXxVBxw/viewform" target="_blank">Sign up</a> // <a href="#more">Learn more</a></p>
+					</div>
+				</div>
+				<div class="slide slide--layout-7" data-layout="layout7">
+					<div class="slide-imgwrap">
+						<div class="slide__img"><div class="slide__img-inner" style="background-image: url(img/4.jpg);"></div></div>
+						<div class="slide__img"><div class="slide__img-inner" style="background-image: url(img/1.jpg);"></div></div>
+						<div class="slide__img"><div class="slide__img-inner" style="background-image: url(img/2.jpg);"></div></div>
+					</div>
+					<div class="slide__title">
+						<p style="color: #6daee1">ACM/WiCS presents</p>
+						<h3 class="slide__title-main">The OlympiCS</h3>
+						<p class="slide__title-sub">JHU's annual CS games for undergrads! <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvxT4WXZTDTh23JknNcmEuC46XhvshARvYA_76wpPcXxVBxw/viewform" target="_blank">Sign up</a> // <a href="#more">Learn more</a></p>
+					</div>
+				</div><!-- /slide -->
+			</div><!-- /slideshow -->
+			<div class="content content--text" id="more">
+				<p><b style="color: #6daee1">The OlympiCS</b> is an annual, day-long tradition at Johns Hopkins University. Teams of CS undergrads compete in fun games and earn points towards prizes. Past OlympiCS events include: Pictionary, Wikipedia races, Family Feud, and (of course) algorithm dancing.</p>
+				<p>The 2nd annual OlympiCS will take place during this semester's reading period: <b style="color: #6daee1">Saturday, May 5, 2018 @1-6pm in Malone Hall</b>. Prizes TBA.</p>
+				
+				<p>Sign up for the 2nd annual OlympiCS <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvxT4WXZTDTh23JknNcmEuC46XhvshARvYA_76wpPcXxVBxw/viewform" target="_blank">here</a>!</p>
+				<p>Interested in volunteering? Join our planning committee <a href="https://docs.google.com/forms/d/e/1FAIpQLSdx6BbUX62h1eH5bfdYfwF0p5AhOU-1CPHaDCK40rJT0O4sug/viewform" target="_blank">here</a>.</p>
+
+				<br>
+				<p><small style="color: #aaa">The OlympiCS is hosted by <a href="http://acm.jhu.edu" target="_blank" style="color: currentColor;">ACM</a> (Association of Computing Machinery) and <a href="http://wics.acm.jhu.edu" target="_blank" style="color: currentColor;">WiCS</a> (Women in Computer Science, aka the ACM-Women chapter), JHU's undergraduate CS groups.</small></p>
+				<p><small style="color: #aaa">Questions? Contact us at <a href="mailto:jhucsgames@gmail.com" style="color: currentColor;">jhucsgames@gmail.com</a>.</small></p>
 			</div>
-		</div> <!-- /container -->
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/anime.min.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+		(function() {
+			var slideshow = new MLSlideshow(document.querySelector('.slideshow'));
+
+			document.querySelector('#next-slide').addEventListener('click', function() {
+				slideshow.next();
+			});
+
+			document.querySelector('#prev-slide').addEventListener('click', function() {
+				slideshow.prev();
+			});
+		})();
+		</script>
 	</body>
 </html>
