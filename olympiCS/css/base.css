@@ -483,11 +483,13 @@ h2 {
 	.info {
 		font-size: 1.25em;
 	}
+}
+
+@media screen and (max-width: 20em) {
 	.header__title a {
-		display: block;
-		font-size: .5em;
+		font-size: 1em;
 	}
 	.slidenav p {
-		font-size: 1em;
+		font-size: 1.15em;
 	}
 }
