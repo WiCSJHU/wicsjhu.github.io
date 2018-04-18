@@ -474,7 +474,6 @@ h2 {
 	}
 	.header__title {
 		font-size: 1em;
-		display: block;
 		align-items: center;
 	}
 	.info, .header__title.faq {
@@ -484,7 +483,11 @@ h2 {
 	.info {
 		font-size: 1.25em;
 	}
+	.header__title a {
+		display: block;
+		font-size: .5em;
+	}
 	.slidenav p {
-		font-size: 1.25;
+		font-size: 1em;
 	}
 }
