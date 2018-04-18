@@ -2,121 +2,251 @@
 <html lang="en" class="no-js">
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>JHU OlympiCS</title>
-		<meta name="description" content="ACM/WiCS/UPE at Johns Hopkins University present the second annual OlympiCS: a day-long event of fun for CS undergrads" />
+		<meta name="description" content="ACM/WiCS/UPE at Johns Hopkins University present the second annual OlympiCS: a day-long event of fun for CS undergrads and faculty/staff" />
 		<meta name="keywords" content="JHU, Hopkins, CS, ACM, WiCS, UPE, OlympiCS, undergraduate, games" />
-		<meta name="author" content="ACM/WiCS @JHU" />
-		<link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/slideshow.css" />
-		<link rel="stylesheet" type="text/css" href="css/slideshow_layouts.css" />
-		<!--[if IE]>
-  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  		<style>
-			.ie-message { display: inline-block; }
-  		</style>
-		<![endif]-->
-		<script>document.documentElement.className = 'js';</script>
+		<meta name="author" content="Vivian Tsai" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 	</head>
-	<body>
-		<svg class="hidden">
-			<defs>
-				<symbol id="icon-arrow" viewBox="0 0 24 24">
-					<title>arrow</title>
-					<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
-				</symbol>
-				<symbol id="icon-drop" viewBox="0 0 24 24">
-					<title>drop</title>
-					<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
-				</symbol>
-				<symbol id="icon-prev" viewBox="0 0 100 50">
-					<title>prev</title>
-					<polygon points="5.4,25 18.7,38.2 22.6,34.2 16.2,27.8 94.6,27.8 94.6,22.2 16.2,22.2 22.6,15.8 18.7,11.8"/>
-				</symbol>
-				<symbol id="icon-next" viewBox="0 0 100 50">
-					<title>next</title>
-					<polygon points="81.3,11.8 77.4,15.8 83.8,22.2 5.4,22.2 5.4,27.8 83.8,27.8 77.4,34.2 81.3,38.2 94.6,25 "/>
-				</symbol>
-				<symbol id="icon-octicon" viewBox="0 0 24 24">
-					<title>octicon</title>
-					<path d="M12,2.2C6.4,2.2,1.9,6.7,1.9,12.2c0,4.4,2.9,8.2,6.9,9.6c0.5,0.1,0.7-0.2,0.7-0.5c0-0.2,0-0.9,0-1.7c-2.8,0.6-3.4-1.4-3.4-1.4C5.6,17.1,5,16.8,5,16.8C4.1,16.2,5,16.2,5,16.2c1,0.1,1.5,1,1.5,1c0.9,1.5,2.4,1.1,2.9,0.8c0.1-0.7,0.4-1.1,0.6-1.3c-2.2-0.3-4.6-1.1-4.6-5c0-1.1,0.4-2,1-2.7C6.5,8.8,6.2,7.7,6.7,6.4c0,0,0.8-0.3,2.8,1C10.3,7.2,11.1,7.1,12,7c0.9,0,1.7,0.1,2.5,0.3c1.9-1.3,2.8-1,2.8-1c0.5,1.4,0.2,2.4,0.1,2.7c0.6,0.7,1,1.6,1,2.7c0,3.9-2.4,4.7-4.6,5c0.4,0.3,0.7,0.9,0.7,1.9c0,1.3,0,2.4,0,2.8c0,0.3,0.2,0.6,0.7,0.5c4-1.3,6.9-5.1,6.9-9.6C22.1,6.7,17.6,2.2,12,2.2z" />
-				</symbol>
-				<!-- From Karen Menezes: https://www.smashingmagazine.com/2015/05/creating-responsive-shapes-with-clip-path/ -->
-				<clipPath id="polygon-clip-rhomboid" clipPathUnits="objectBoundingBox">
-					<polygon points="0 1, 0.3 0, 1 0, 0.7 1" />
-				</clipPath>
-			</defs>
-		</svg>
-		<main>
-			<header class="codrops-header">
-				<nav class="dummy-links">
-					<a class="dummy-links__link dummy-links__link--current" href="#">Home</a>
-					<a class="dummy-links__link" href="https://docs.google.com/forms/d/e/1FAIpQLSdvxT4WXZTDTh23JknNcmEuC46XhvshARvYA_76wpPcXxVBxw/viewform" target="_blank">Sign Up</a>
-					<a class="dummy-links__link" href="https://docs.google.com/forms/d/e/1FAIpQLSdx6BbUX62h1eH5bfdYfwF0p5AhOU-1CPHaDCK40rJT0O4sug/viewform" target="_blank">Volunteer</a>
-				</nav>
-			</header>
-			<div class="slideshow" tabindex="0">
-				<div class="slide slide--layout-1" data-layout="layout1">
-					<div class="slide-imgwrap">
-						<div class="slide__img"><div class="slide__img-inner" style="background-image: url(img/1.jpg);"></div></div>
-						<div class="slide__img"><div class="slide__img-inner" style="background-image: url(img/3.jpg);"></div></div>
-						<div class="slide__img"><div class="slide__img-inner" style="background-image: url(img/4.jpg);"></div></div>
-					</div>
-					<div class="slide__title">
-						<p style="color: #6daee1">ACM/WiCS/UPE present</p>
-						<h3 class="slide__title-main">The OlympiCS</h3>
-						<p class="slide__title-sub">JHU's annual CS games for undergrads! <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvxT4WXZTDTh23JknNcmEuC46XhvshARvYA_76wpPcXxVBxw/viewform" target="_blank">Sign up</a> // <a href="#more">Learn more</a></p>
+	<body class="demo-1">
+		<main>	
+			<div class="content content--fixed">
+				<header class="header">
+					<h1 class="header__title" style="padding-left: 1em">
+						ACM/WiCS/UPE present
+						<a href="" style="color: #000">&nbsp;&nbsp;&#9658;</a>
+					</h1>
+				</header>
+			</div>
+			<div class="content">
+				<div class="slideshow">
+					<div class="slide slide--current">
+						<div class="slide__bg slide__bg--1"></div>
+						<h2 class="word word--1">The OlympiCS</h2>
 					</div>
 				</div>
-				<div class="slide slide--layout-7" data-layout="layout7">
-					<div class="slide-imgwrap">
-						<div class="slide__img"><div class="slide__img-inner" style="background-image: url(img/4.jpg);"></div></div>
-						<div class="slide__img"><div class="slide__img-inner" style="background-image: url(img/1.jpg);"></div></div>
-						<div class="slide__img"><div class="slide__img-inner" style="background-image: url(img/2.jpg);"></div></div>
-					</div>
-					<div class="slide__title">
-						<p style="color: #6daee1">ACM/WiCS/UPE present</p>
-						<h3 class="slide__title-main">The OlympiCS</h3>
-						<p class="slide__title-sub">JHU's annual CS games for undergrads! <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvxT4WXZTDTh23JknNcmEuC46XhvshARvYA_76wpPcXxVBxw/viewform" target="_blank">Sign up</a> // <a href="#more">Learn more</a></p>
-					</div>
-				</div><!-- /slide -->
-			</div><!-- /slideshow -->
-			<div class="content content--text" id="more">
-				<p><b style="color: #6daee1">The OlympiCS</b> is an annual, day-long tradition at Johns Hopkins University. Teams of CS undergrads compete in fun games and earn points towards prizes. Past OlympiCS events include: Pictionary, Wikipedia races, Family Feud, and (of course) algorithm dancing.</p>
-				<p>The 2nd annual OlympiCS will take place during this semester's reading period: <b style="color: #6daee1">Saturday, May 5, 2018 @1-6pm in Malone Hall</b>. Prizes TBA.</p>
+				<nav class="slidenav">
+						<p style="padding: 1em; text-transform: uppercase;">2nd annual CS games
+						<a href="#about">SIGN UP / LEARN MORE</a></p>
 				
-				<p>Sign up for the 2nd annual OlympiCS <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvxT4WXZTDTh23JknNcmEuC46XhvshARvYA_76wpPcXxVBxw/viewform" target="_blank">here</a>!</p>
-				<p>Interested in volunteering? Join our planning committee <a href="https://docs.google.com/forms/d/e/1FAIpQLSdx6BbUX62h1eH5bfdYfwF0p5AhOU-1CPHaDCK40rJT0O4sug/viewform" target="_blank">here</a>.</p>
-
-				<br>
-				<p><small style="color: #aaa">The OlympiCS is hosted by JHU's undergraduate CS groups:
-				<ul>
-					<li><p><a href="http://acm.jhu.edu" target="_blank" style="color: currentColor;">ACM</a> (Association of Computing Machinery)</p></li>
-					<li><p><a href="http://wics.acm.jhu.edu" target="_blank" style="color: currentColor;">WiCS</a> (Women in Computer Science, aka the ACM-Women chapter)</p></li>
-					<li><p>UPE (Upsilon Pi Epsilon, the national CS honor society)</p></li>
-				</ul>
-				</small></p>
-				<p><small style="color: #aaa">Questions? Contact us at <a href="mailto:jhucsgames@gmail.com" style="color: currentColor;">jhucsgames@gmail.com</a>.</small></p>
+				</nav>
 			</div>
 		</main>
-		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<main id="about">
+			<div class="content test" style="padding-top: 20vh">
+				<div class="info">
+					<center><p><b>THE OLYMPICS</b> is an annual, day-long tradition for undergrads + faculty/staff at Johns Hopkins University.</p></center>
+				</div>
+			</div>
+			<div class="content test">
+				<header class="header">
+					<h1 class="header__title"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdvxT4WXZTDTh23JknNcmEuC46XhvshARvYA_76wpPcXxVBxw/viewform" target="_blank" style="margin-right: .5em">STUDENT SIGN-UP</a></h1>
+					<h1 class="header__title"><a href="https://docs.google.com/forms/d/e/1FAIpQLSf2gwVvryIkprypoa4IUuhiZzqURveuRDJR5F9aI-XvKP2LTQ/viewform" target="_blank" style="margin-left: .5em">STAFF SIGN-UP</a></h1>
+				</header>
+			</div>
+			<div class="content test">
+				<div class="info" style="align-self: left">
+					<p><span>Who</span> Teams of undergrads + teams of faculty/staff and their families</p>
+					<p><span>What</span> Compete in CS-themed games for prizes (see FAQ)</p>
+
+					<p><span>When</span> Saturday, May 5 @ 1-6pm</p>
+
+					<p><span>Where</span> Malone Hall</p>
+
+					<p><small>See FAQ below for more details.</small></p>
+
+					<center>
+						<img src="img/1.jpg" style="max-height: 300px; max-width:90%; margin: 1em"/>
+						<img src="img/3.jpg" style="max-height: 300px; max-width:90%; margin: 1em"/>
+					</center>
+				</div>
+			</div>
+		</main>
+		<main id="faq">
+			<div class="content test" style="padding-top: 20vh">
+				<div class="info faq">
+					<center><h2>FAQ</h2></center>
+
+					<img src="img/5.jpg" style="max-height: 300px; max-width:90%; margin: 1em; float: right;"/>
+
+					<p><span>What kind of prizes?</span> Prizes like random, free swag. Also, <b>grand prizes</b> like free dinner or lunch with CS faculty members of your choice!</p>
+
+					<p><span>What kind of games?</span> Games like Pictionary, Wikipedia races, and our grand finale: <b>algorithm dancing</b>. Plus a few more surprises.</p>
+
+					<p><span>I can't stay for the whole time.</span> That's okay—drop by and participate in a few games anyway! You still have to sign up if you want to do this. (Also, note that you're not eligible for prizes unless you're there the whole time. Sorry.)</p>
+
+					<p><span>I'm a faculty/staff member. Do I bring my family?</span> Yes! Your spouse (and children, if they're old enough for things like Jeopardy) can compete on your team. We'll also have kids' games for those too young to compete (see next question).</p>
+
+					<p><span>What kind of kids' games?</span> Drawing, water balloons, relay races, and (we're working on) a bouncy castle. Plus, they'll get to help judge some of the main games.</p>
+
+					<p><span>But I'm brand-new to CS/forget how mergesort works/etc.</span> No worries—you can still compete! The OlympiCS is CS-themed, but it's a bonding event, not a test (think "draw your favorite professor" and "guess how many people like C" rather than "prove O(n log n) time"). Read: no studying involved. Also, we'll give review sheets out before algo dancing!</p>
+
+					<p><span>I want to participate in the games.</span> Great! Fill out the corresponding sign-up form above. You can list team members (<=4 per team) or sign up as an individual.</p>
+
+					<img src="img/4.jpg" style="max-height: 250px; max-width:90%; margin: 1em; float: right;"/>
+
+					<p><span>How do sign-ups and teams work?</span> The OlympiCS is designed for teams of 4, and all participants must sign-up in advance.<br>
+					<br>
+					Students:
+						<ol>
+							<li><p>Sign up as a team <=4. Only one person on your team needs to do this.</p></li>
+							<li><p>If you're an individual sign-up or a team < 4, we'll match you up with additional people for game day.</p></li>
+							<li><p>If you need to change teams, add/change team members, etc., contact us at jhucsgames@gmail.com.</p></li>
+						</ol>
+					</p><p>
+					Staff:
+						<ol>
+							<li><p>Sign up and indicate all family members who will be attending.
+								<ul>
+									<li><p>You can request that your competing family member(s) be on the same team OR not be on the same team (if you'd like to compete against your spouse, or your child wants to compete with undergrads, etc.).</p></li>
+									<li><p>Note whether or not any of your child(ren) will be participating in the kids' games.</p></li>
+									<li><p>Request other staff members for your team.</p></li>
+								</ul>
+							</p></li>
+							<li><p>If you're an individual sign-up or your total team < 4, we'll match you up with additional staff members for game day.</p></li>
+							<li><p>If you need to change teams, add/change team members, etc., contact us at jhucsgames@gmail.com.</p></li>
+						</ol>
+					</p>
+
+					<p><span>I want to help out.</span> We need volunteers to help plan/run games (these people can't compete) and volunteers to help with set-up/tear-down (these people CAN compete). Email us at jhucsgames@gmail.com and let us know which kind of volunteer you'd like to be.</p>
+
+					<p><span>I have another question/I want to edit my sign-up or team info.</span> Email us at jhucsgames@gmail.com!</p>
+
+					<p><span>Who runs this thing?</span> The OlympiCS is hosted by JHU's undergraduate CS groups: ACM (Association of Computing Machinery), WiCS (Women in CS), and UPE (Upsilon Pi Epsilon).</p>
+				</div>
+			</div>
+		</main>
+		<main>
+			<div class="content test">
+				<div class="info" style="padding-bottom: 1em; margin-top: 2em">
+					<p style="font-size: .5em;">JHU OlympiCS 2018. Design by ACM/WiCS/UPE. Javascript by Codrops.</p>
+				</div>
+			</div>
+		</main>
+		<script src="js/charming.min.js"></script>
 		<script src="js/anime.min.js"></script>
-		<script src="js/main.js"></script>
+		<script src="js/wordFx.js"></script>
 		<script>
-		(function() {
-			var slideshow = new MLSlideshow(document.querySelector('.slideshow'));
+			{
+				const effects = [
+					// Effect 1
+					{
+						options: {
+							shapeColors: ['#6435ea','#295ddc','#9fd7ff','#d65380','#0228f7','#242627']
+						},
+						hide: {
+							lettersAnimationOpts: {
+								duration: 800,
+								delay: (t,i) => i*40,
+								easing: 'easeOutExpo',
+								opacity: {
+									value: 0, 
+									duration: 100,
+									delay: (t,i) => i*40,
+									easing: 'linear'
+								},
+								translateY: ['0%', '100%']
+							}
+						},
+						show: {
+							lettersAnimationOpts: {
+								duration: 800,
+								delay: (t,i) => i*40,
+								easing: 'easeOutElastic',
+								opacity: [0,1],
+								translateY: ['100%', '0%']
+							},
+							shapesAnimationOpts: {
+								duration: 300,
+								delay: (t,i) => i*30+100,
+								easing: 'easeOutQuad',
+								translateY: () => [anime.random(-15,15),anime.random(-200,200)],
+								scale: () => [0.2,randomBetween(0.5,1)],
+								opacity: [
+									{
+										value: 1, 
+										duration:1, 
+										delay: (t,i) => i*30+100
+									}, 
+									{
+										value: 0,
+										duration: 200, 
+										delay:200,
+										easing: 'linear'}
+								]
+							}
+						}
+					}
+				];
 
-			document.querySelector('#next-slide').addEventListener('click', function() {
-				slideshow.next();
-			});
+				class Slideshow {
+					constructor(el) {
+						this.DOM = {};
+						this.DOM.el = el;
+						this.DOM.slides = Array.from(this.DOM.el.querySelectorAll('.slide'));
+						this.DOM.bgs = Array.from(this.DOM.el.querySelectorAll('.slide__bg'));
+						this.DOM.words = Array.from(this.DOM.el.querySelectorAll('.word'));
+						this.slidesTotal = this.DOM.slides.length;
+						this.current = 0;
+						this.words = [];
+						this.DOM.words.forEach((word, pos) => {
+							this.words.push(new Word(word, effects[pos].options));
+						});
+						
+						this.isAnimating = true;
+						this.words[this.current].show(effects[this.current].show).then(() => this.isAnimating = false);
+					}
+					show(direction) {
+						if ( this.isAnimating ) return;
+						this.isAnimating = true;
+						
+						let newPos;
+						let currentPos = this.current;
+						if ( direction === 'next' ) {
+							newPos = currentPos < this.slidesTotal - 1 ? currentPos+1 : 0;
+						}
+						else if ( direction === 'prev' ) {
+							newPos = currentPos > 0 ? currentPos-1 : this.slidesTotal - 1;
+						}
 
-			document.querySelector('#prev-slide').addEventListener('click', function() {
-				slideshow.prev();
-			});
-		})();
+						this.DOM.slides[newPos].style.opacity = 1;
+						this.DOM.bgs[newPos].style.transform = 'none';
+						anime({
+							targets: this.DOM.bgs[currentPos],
+							duration: 600,
+							easing: [0.2,1,0.3,1],
+							translateY: ['0%', direction === 'next' ? '-100%' : '100%'],
+							complete: () => {
+								this.DOM.slides[currentPos].classList.remove('slide--current');
+								this.DOM.slides[currentPos].style.opacity = 0;
+								this.DOM.slides[newPos].classList.add('slide--current');
+								this.words[newPos].show(effects[newPos].show).then(() => this.isAnimating = false);
+							}
+						});
+
+						this.words[newPos].hide();
+						this.words[this.current].hide(effects[currentPos].hide).then(() => {
+							
+							this.current = newPos;
+						});
+					}
+    			}
+
+				const slideshow = new Slideshow(document.querySelector('.slideshow'));
+				document.querySelector('.slidenav__item--prev').addEventListener('click', () => slideshow.show('prev') );
+				document.querySelector('.slidenav__item--next').addEventListener('click', () => slideshow.show('next') );
+				document.addEventListener('keydown', (ev) => {
+					const keyCode = ev.keyCode || ev.which;
+					if ( keyCode === 37 ) {
+						slideshow.show('prev');
+					}
+					else if ( keyCode === 39 ) {
+						slideshow.show('next');
+					}
+				});
+			}
 		</script>
 	</body>
 </html>
