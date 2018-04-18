@@ -20,6 +20,8 @@ body {
 
 p {
 	font-family: Trebuchet, Tahoma, Arial;
+	color: rgba(0, 0, 0, 0.8);
+	font-weight: 500;
 }
 
 /* Color schemes */
@@ -49,7 +51,7 @@ a {
 a:hover,
 a:focus {
 	/* color: var(--color-link-hover); */
-	color: rgba(0, 0, 0, 0.5);;
+	color: rgba(0, 0, 0, 0.8); 
 	outline: none;
 }
 
@@ -103,7 +105,7 @@ main {
 .signup a {
 	text-transform: uppercase;
 	display: inline-block;
-	color: #fff;
+	color: rgba(255, 255, 255, 0.95);
 	font-size: 1em;
 	margin: .25em;
 	text-align: center;
@@ -112,7 +114,7 @@ main {
 .info .signup a {
 	text-transform: uppercase;
 	display: inline-block;
-	color: #fff;
+	color: rgba(255, 255, 255, 0.95);
 	margin: 1em;
 	font-size: 1.25em;
 	text-align: center;
@@ -121,7 +123,7 @@ main {
 .info .signup a:hover,
 .info .signup a:focus {
 	/* color: var(--color-link-hover); */
-	color: #000;
+	color: rgba(0,0,0,.8);
 	outline: none;
 }
 
@@ -158,13 +160,13 @@ main {
 	padding-top: 0;
 	padding-bottom: 0;
 	font-size: 1.5em;
-	color: rgba(0, 0, 0, 0.5);;
+	color: rgba(0, 0, 0, 0.8);
 }
 
 .info h3 {
 	text-transform: uppercase;
 	font-weight: 500;
-	color: rgba(0, 0, 0, 0.5);;
+	color: rgba(0, 0, 0, 0.8);
 	font-size: .8em;
 	align-content: center;
 }
@@ -179,7 +181,7 @@ main {
 	text-transform: uppercase;
 	font-size: 1.25em;
 	font-weight: 600;
-	color: #fff;
+	color: rgba(255, 255, 255, 0.95);
 }
 
 .info.faq span {
@@ -192,7 +194,7 @@ main {
 .info.faq p {
 	font-size: .85em;
 	line-height: auto;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 /* Header */
@@ -219,7 +221,7 @@ main {
 .header__title {
 	font-size: 1.15em;
 	font-weight: normal;
-	color: rgba(0, 0, 0, 0.5);;
+	color: rgba(0, 0, 0, 0.8);
 }
 
 .header__title a {
@@ -313,13 +315,13 @@ main {
 .slidenav p {
 	text-align: center;
 	font-size: 1.5em;
-	color: rgba(0, 0, 0, 0.5);;
+	color: rgba(0, 0, 0, 0.8);
 }
 
 .slidenav a {
 	text-transform: uppercase;
 	display: block;
-	color: #fff;
+	color: rgba(255, 255, 255, 0.95);
 	margin: .5em;
 }
 
@@ -394,7 +396,7 @@ h2 {
 
 .word--1 .char11,
 .word--1 .char12 {
-	color: rgba(0, 0, 0, 0.5);;
+	color: rgba(0, 0, 0, 0.8);
 }
 
 .word--2 {
