@@ -18,6 +18,10 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+p {
+	font-family: Trebuchet, Tahoma, Arial;
+}
+
 /* Color schemes */
 .demo-1 {
 	--color-text: #fff;
@@ -45,7 +49,7 @@ a {
 a:hover,
 a:focus {
 	/* color: var(--color-link-hover); */
-	color: #000;
+	color: rgba(0, 0, 0, 0.5);;
 	outline: none;
 }
 
@@ -154,13 +158,13 @@ main {
 	padding-top: 0;
 	padding-bottom: 0;
 	font-size: 1.5em;
-	color: #000;
+	color: rgba(0, 0, 0, 0.5);;
 }
 
 .info h3 {
 	text-transform: uppercase;
 	font-weight: 500;
-	color: #000;
+	color: rgba(0, 0, 0, 0.5);;
 	font-size: .8em;
 	align-content: center;
 }
@@ -180,7 +184,7 @@ main {
 
 .info.faq span {
 	font-size: .9em;
-	font-weight: 400;
+	font-weight: 600;
 	display: block;
 	line-height: auto;
 }
@@ -188,7 +192,7 @@ main {
 .info.faq p {
 	font-size: .85em;
 	line-height: auto;
-	font-weight: 100;
+	font-weight: 400;
 }
 
 /* Header */
@@ -215,7 +219,7 @@ main {
 .header__title {
 	font-size: 1.15em;
 	font-weight: normal;
-	color: #000;
+	color: rgba(0, 0, 0, 0.5);;
 }
 
 .header__title a {
@@ -309,7 +313,7 @@ main {
 .slidenav p {
 	text-align: center;
 	font-size: 1.5em;
-	color: #000;
+	color: rgba(0, 0, 0, 0.5);;
 }
 
 .slidenav a {
@@ -390,7 +394,7 @@ h2 {
 
 .word--1 .char11,
 .word--1 .char12 {
-	color: #000;
+	color: rgba(0, 0, 0, 0.5);;
 }
 
 .word--2 {
