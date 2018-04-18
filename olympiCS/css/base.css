@@ -149,7 +149,6 @@ main {
 	overflow: auto;
 	top: 5vh;
 	left: 0;
-	overflow: scroll;
 	padding-left: 5em;
 	padding-right: 5em;
 	padding-top: 0;
@@ -326,7 +325,7 @@ main {
 
 .slidenav {
 	position: relative;
-	margin: 30% 0 0 0;
+	margin: 50vh 0 0 0;
 	z-index: 100;
 }
 
