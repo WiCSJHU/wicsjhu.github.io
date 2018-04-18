@@ -19,7 +19,7 @@ body {
 }
 
 p {
-	font-family: Trebuchet, Tahoma, Arial;
+	font-family: "Helvetica Neue", Helvetica, Trebuchet, Tahoma, Arial;
 	color: rgba(0, 0, 0, 0.8);
 	font-weight: 500;
 }
@@ -323,6 +323,7 @@ main {
 	display: block;
 	color: rgba(255, 255, 255, 0.95);
 	margin: .5em;
+	font-size: .9em;
 }
 
 .slidenav a:hover {
