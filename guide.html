@@ -1,0 +1,93 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- common.css -->
+      <style>* {-webkit-tap-highlight-color: rgba(0,0,0,0);}html {-webkit-text-size-adjust: none;}body {font-family: -apple-system, Helvetica, Arial, sans-serif;margin: 0;padding: 20px;color: #333;word-wrap: break-word;}h1, h2, h3, h4, h5, h6 {line-height: 1.1;}img {max-width: 100% !important;height: auto;}blockquote {margin: 0;padding: 0 15px;color: #777;border-left: 4px solid #ddd;}hr {background-color: #ddd;border: 0;height: 1px;margin: 15px 0;}code {font-family: Menlo, Consolas, 'Ubuntu Mono', Monaco, 'source-code-pro', monospace;line-height: 1.4;margin: 0;padding: 0.2em 0;font-size: 90%;background-color: rgba(0,0,0,0.04);border-radius: 3px;}pre > code {margin: 0;padding: 0;font-size: 100%;word-break: normal;background: transparent;border: 0;}ol {list-style-type: decimal;}ol ol, ul ol {list-style-type: lower-latin;}ol ol ol, ul ol ol, ul ul ol, ol ul ol {list-style-type: lower-roman;}table {border-spacing: 0;border-collapse: collapse;margin-top: 0;margin-bottom: 16px;}table th {font-weight: bold;}table th, table td {padding: 6px 13px;border: 1px solid #ddd;}table tr {border-top: 1px solid #ccc;}table tr:nth-child(even) {background-color: #f8f8f8;}input[type="checkbox"] {cursor: default;margin-right: 0.5em;font-size: 13px;}.task-list-item {list-style-type: none;}.task-list-item+.task-list-item {margin-top: 3px;}.task-list-item input {float: left;margin: 0.3em 1em 0.25em -1.6em;vertical-align: middle;}#tag-field {margin: 8px 2px 10px;}#tag-field .tag {display: inline-block;background: #cadff3;border-radius: 4px;padding: 1px 8px;color: black;font-size: 12px;margin-right: 10px;line-height: 1.4;}</style>
+      <!-- ace-static.css -->
+      <style>.ace_static_highlight {white-space: pre-wrap;}.ace_static_highlight .ace_gutter {width: 2em;text-align: right;padding: 0 3px 0 0;margin-right: 3px;}.ace_static_highlight.ace_show_gutter > .ace_line {padding-left: 2.6em;}.ace_static_highlight .ace_line {position: relative;}.ace_static_highlight .ace_gutter-cell {-moz-user-select: -moz-none;-khtml-user-select: none;-webkit-user-select: none;user-select: none;top: 0;bottom: 0;left: 0;position: absolute;}.ace_static_highlight .ace_gutter-cell:before {content: counter(ace_line, decimal);counter-increment: ace_line;}.ace_static_highlight {counter-reset: ace_line;}</style>
+      <style>.ace-chrome .ace_gutter {background: #ebebeb;color: #333;overflow : hidden;}.ace-chrome .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-chrome {background-color: #FFFFFF;color: black;}.ace-chrome .ace_cursor {color: black;}.ace-chrome .ace_invisible {color: rgb(191, 191, 191);}.ace-chrome .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-chrome .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-chrome .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-chrome .ace_invalid {background-color: rgb(153, 0, 0);color: white;}.ace-chrome .ace_fold {}.ace-chrome .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-chrome .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-chrome .ace_support.ace_type,.ace-chrome .ace_support.ace_class.ace-chrome .ace_support.ace_other {color: rgb(109, 121, 222);}.ace-chrome .ace_variable.ace_parameter {font-style:italic;color:#FD971F;}.ace-chrome .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-chrome .ace_comment {color: #236e24;}.ace-chrome .ace_comment.ace_doc {color: #236e24;}.ace-chrome .ace_comment.ace_doc.ace_tag {color: #236e24;}.ace-chrome .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-chrome .ace_variable {color: rgb(49, 132, 149);}.ace-chrome .ace_xml-pe {color: rgb(104, 104, 91);}.ace-chrome .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-chrome .ace_heading {color: rgb(12, 7, 255);}.ace-chrome .ace_list {color:rgb(185, 6, 144);}.ace-chrome .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-chrome .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-chrome .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-chrome .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-chrome .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-chrome .ace_gutter-active-line {background-color : #dcdcdc;}.ace-chrome .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-chrome .ace_storage,.ace-chrome .ace_keyword,.ace-chrome .ace_meta.ace_tag {color: rgb(147, 15, 128);}.ace-chrome .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-chrome .ace_string {color: #1A1AA6;}.ace-chrome .ace_entity.ace_other.ace_attribute-name {color: #994409;}.ace-chrome .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}</style>
+      <!-- export.css -->
+      <style>
+        body{margin:0 auto;max-width:800px;line-height:1.4}
+        #nav{margin:5px 0 10px;font-size:15px}
+        #titlearea{border-bottom:1px solid #ccc;font-size:17px;padding:10px 0;}
+        #contentarea{font-size:15px;margin:16px 0}
+        .cell{outline:0;min-height:20px;margin:5px 0;padding:5px 0;}
+        .code-cell{font-family:Menlo,Consolas,'Ubuntu Mono',Monaco,'source-code-pro',monospace;font-size:12px;}
+        .latex-cell{white-space:pre-wrap;}
+      </style>
+      <!-- User CSS -->
+      <style> .text-cell {font-size: 15px;}.code-cell {font-size: 12px;}.markdown-cell {font-size: 15px;}.latex-cell {font-size: 15px;}</style>
+    </head>
+    <body>
+      
+      <div id="titlearea">
+        <h2>Welcome to WiCS: A Tiny Guide</h2>
+      </div>
+      <div id="contentarea"><div class="cell markdown-cell"><h2>00/ hello</h2>
+<p>Women in CS (WiCS) is for women/non-binary individuals, as well as other underrepresented groups in tech (and allies!), who are involved in CS (whether it's majoring, minoring, or seriously considering majoring/minoring).</p>
+<p>We focus on:</p>
+<ul>
+<li>forming friendships</li>
+<li>helping you find internships and jobs</li>
+<li>providing a welcoming place to both work <em>and</em> hang out (and eat!)</li>
+</ul>
+<p>Our events often include:</p>
+<ul>
+<li>company tech talks/workshops</li>
+<li>movie nights</li>
+<li>dinners with WiCS alumnae</li>
+<li>breakfast study sessions</li>
+<li>student-led workshops/talks</li>
+</ul>
+<p>and always include:</p>
+<ul>
+<li><em>Coding Circle</em>, a weekly meeting (Friday, Malone 107, 4:30pm) with snacks, nail polish, and playing cards. We'll discuss the Topic of the Week ("internship hunting," "group project tips") and also just hang out and unwind.</li>
+<li>Our <em>mentorship program</em>, where we pair underclassmen and upperclassmen (based on their interests). Mentors get to share their experiences and offer advice; mentees get to ask questions and receive helpful tips; and everyone gets to meet new people and participate in fun bonding events. Sign-ups are in the winter/spring and for active members only!</li>
+</ul>
+<h2>01/ be in the loop</h2>
+<p>Two main things:</p>
+<ul>
+<li>join our <a href="https://tinyurl.com/jhuwics">Facebook group</a>, where we post about WiCS events</li>
+<li>join our <a href="https://www.cs.jhu.edu/mailman/listinfo/wics">mailing list</a>, where we forward job/internship opportunities as well as info on relevant events</li>
+</ul>
+<p>You can also (but don't have to):</p>
+<ul>
+<li>like our <a href="https://facebook.com/jhuwics">Facebook page</a>, where we post photos from events and (starting in Sept 2018) announce WiCS Members of the Month</li>
+<li>check out <a href="https://www.cs.jhu.edu/undergraduate-studies/undergraduate-student-groups/wics/">the department's page on WiCS</a>, which links to some additional resources</li>
+</ul>
+<h2>02/ be a member</h2>
+<p>Everyone is welcome to join our group/mailing list and attend our general events, but members get:</p>
+<ul>
+<li>membership status (if you like bragging rights), plus their name on our website</li>
+<li>access to our database of resources (for internships, scholarships, etc.)</li>
+<li>access to the ACM/WiCS lounge (in Malone Hall)</li>
+</ul>
+<p>and <strong>active</strong> members additionally get:</p>
+<ul>
+<li>invites to exclusive company events</li>
+<li>our mentorship program (you must be an active member this Fall 2018 in order to sign up for the 2018-19 school year)</li>
+</ul>
+<p>To become a member of WiCS, come to three of our events. During/after your third event, let Vivian or Cindy (on the exec board) know and one of them will add you to our site and give you database/lounge access.</p>
+<p>To remain an <strong>active</strong> member of WiCS, come to at least two events each semester. (Remind Vivian or Cindy during/after your second event to get your name on the active members list for the current semester!)</p>
+<h2>03/ about acm</h2>
+<p>Membership in WiCS automatically grants you membership in the Association for Computing Machinery (ACM), the other undergraduate CS organization on campus.</p>
+<p>Note: ACM is a more "general CS" group--less discussion of interview tips, workplace environments, etc. and more speakers who talk about specialized CS fields (including speakers from our CS department!).</p>
+<p>WiCS and ACM collaborate on a ton of events, including:</p>
+<ul>
+<li>game nights (both board and video)</li>
+<li>The OlympiCS, which is a department-wide day of CS games (i.e., students and faculty competing for prizes)</li>
+<li>TBA: a student-led workshop series on things like Git and Python this fall!</li>
+</ul>
+<p>These joint events <em>will</em> appear on WiCS event calendars. However, ACM meetings (every Thursday evening) will not--check the Google Calendar on our <a href="https://wics.acm.jhu.edu/events">events</a> page (and/or follow the ACM's Facebook page) to stay tuned for those.</p>
+<p>Feel free to ask our WiCS exec board about ACM!</p>
+<h2>04/ contact</h2>
+<p>Questions? Suggestions? Complaints? Feel free to contact the WiCS exec board (emails listed on the <a href="https://wics.acm.jhu.edu/about">About</a> page).</p>
+</div></div>
+      <script></script>
+    </body>
+    </html>
+  
