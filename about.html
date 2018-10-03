@@ -17,12 +17,15 @@
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet">
 
+    <!-- AOS animation css css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   </head>
 
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-info fixed-top">
+    <nav id="particles-js" class="navbar fixed-top navbar-expand-lg navbar-dark bg-info fixed-top">
       <div class="container">
         <a class="navbar-brand" href="/"><img src="img/logo.jpg" style="max-height: 100px"/></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,7 +56,7 @@
       <br><br><br>
 
       <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">About
+      <h1 data-aos= "fade-up"  class="mt-4 mb-3">About
       </h1>
 
       <!--ol class="breadcrumb">
@@ -64,7 +67,7 @@
       </ol-->
 
       <!-- Intro Content -->
-      <div class="row">
+      <div data-aos= "fade-up"  class="row">
         <div class="col-lg-6">
           <img class="img-fluid rounded mb-4" src="img/ghc_2.jpg" alt="WiCS at GHC 2016">
         </div>
@@ -82,11 +85,12 @@
       <hr>
 
       <!-- Exec -->
-      <h3>Exec Board: 2018-2019</h3>
-
+      <div data-aos= "fade-up" >
+      <h3 >Exec Board: 2018-2019</h3>
+    </div>
       <div class="row">
         <!-- VIV -->
-        <div class="col-sm-3 mb-4">
+        <div data-aos= "fade-up"  class="col-sm-3 mb-4">
           <div class="card h-100 text-center">
             <img class="card-img-top" src="img/members/vivian.jpg" alt="">
             <div class="card-body">
@@ -100,7 +104,7 @@
           </div>
         </div>
         <!-- ADRI -->
-        <div class="col-sm-3 mb-4">
+        <div data-aos= "fade-up"  class="col-sm-3 mb-4">
           <div class="card h-100 text-center">
             <img class="card-img-top" src="img/members/adriana.jpg" alt="">
             <div class="card-body">
@@ -114,9 +118,9 @@
           </div>
         </div>
         <!-- DOROTHY -->
-        <div class="col-sm-3 mb-4">
+        <div data-aos= "fade-up"  class="col-sm-3 mb-4">
           <div class="card h-100 text-center">
-            <img class="card-img-top" src="img/members/dorothy.jpg" alt="">
+            <img  class="card-img-top" src="img/members/dorothy.jpg" alt="">
             <div class="card-body">
               <h5 class="card-title">Dorothy Hu</h5>
               <h6 class="card-subtitle mb-2 text-muted">Treasurer</h6>
@@ -130,7 +134,7 @@
       </div>
       <div class="row">
         <!-- CINDY -->
-        <div class="col-sm-3 mb-4">
+        <div data-aos= "fade-up"  class="col-sm-3 mb-4">
           <div class="card h-100 text-center">
             <img class="card-img-top" src="img/members/cindy.jpg" alt="">
             <div class="card-body">
@@ -144,7 +148,7 @@
           </div>
         </div>
         <!-- CLAUDIA -->
-        <div class="col-sm-3 mb-4">
+        <div data-aos= "fade-up" class="col-sm-3 mb-4">
           <div class="card h-100 text-center">
             <img class="card-img-top" src="img/members/claudia.jpg" alt="">
             <div class="card-body">
@@ -262,6 +266,18 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Particles JS -->
+    <script  type="text/javascript" src="js/particles.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+
+      <!-- JQuery CDN and AOS animations JS-->
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
   </body>
 
