@@ -5,9 +5,39 @@
  */
 
 body {
-  padding-top: 54px;
-   background-color: rgb(245, 245, 245);
+   background-color: rgba(245,245,245,1);
+   padding: 0;
+  margin: 0;
+  font-family: 'Chivo', sans-serif;
+}
+p {
+margin: 2px;
+}
 
+row{
+    margin: 0;
+}
+
+img {
+margin: 2px;
+}
+.iconhover{
+ transition: transform .2s;
+}
+.iconhover:hover{
+transform:scale(1.1);
+}
+.nopad {
+    margin-top: 0;
+}
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  cursor: pointer;
+  pointer-events: none;
 }
 
 @media (min-width: 992px) {
@@ -15,13 +45,15 @@ body {
     padding-top: 56px;
   }
 }
-
 .card {
   height: 100%;
 }
 
 .navbar-custom {
-    background-image: linear-gradient(to left ,rgba(20, 112, 134,1), rgba(23, 162, 184,1));
+    background-color: rgba(23, 162, 184,1);
+    -webkit-box-shadow: 0 4px 4px -6px #999;
+    -moz-box-shadow: 0 4px 4px -6px #999;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 #particles-js {
@@ -29,12 +61,20 @@ body {
     height: 110px;
     z-index: 2;
 }
-
+.column {
+    float: left;
+    width: 33.33%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 .btn {
   display: inline-block;
-  border-radius: 6px;
+  border-radius: 0px;
   border-width: medium;
-  color: rgb(20, 112, 134);
+  color: rgb(23, 162, 184);
   background: none;
   cursor: pointer;
   margin: 5px;
@@ -65,8 +105,19 @@ body {
   right: 0;
 }
 
-
-.zoom:hover {
-    transition: transform .5s;
-    transform: scale(1.05 ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+body::-webkit-scrollbar
+{
+    width: 0.75em;
 }
+
+body::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+body::-webkit-scrollbar-thumb {
+
+	background-color: #058C8C;
+	outline: 1px solid slategrey;
+}
+
+

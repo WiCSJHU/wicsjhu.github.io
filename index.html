@@ -20,14 +20,17 @@
     <!-- AOS animation css css -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Chivo" rel="stylesheet">
   </head>
 
   <body>
 
+</div>
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark   navbar-custom">
+    <nav class="navbar fixed-top navbar-expand-xl navbar-dark   navbar-custom">
       <div class="container">
-        <a class="navbar-brand"><img src="img/logo.jpg" style="max-height: 100px"/></a>
+        <a class="navbar-brand"><img src="img/logo.png" style="max-height: 60px"/></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -49,24 +52,23 @@
         </div>
       </div>
     </nav>
+    <!-- Graphics and big particles -->
+    <canvas width="1000" height="400" id="canvas"></canvas>
+    <div id="overlay" ></div>
 
     <!-- Page Content -->
     <div class="container">
 
-
-      <br><br>
-
       <!-- Jumbotron Header -->
-      <header  data-aos= "fade-up" class="jumbotron my-5">
-
-        <h1 class="display-5">Women in Computer Science</h1>
+      <header  data-aos= "fade-up" class="jumbotron ">
+        <h1 class="display-5 ">Women in Computer Science</h1>
         <p class="lead">New to WiCS? Here's a quick guide on how to keep tabs on events, become a member, and more:</p>
         <a href="guide" target="_blank" class="btn btn-info btn-lg"><span>Welcome to WiCS</span></a>
       </header>
       <!-- Marketing Icons Section -->
 
       <div data-aos= "fade-up" class="row">
-        <div class="col-lg-4 mb-4 zoom">
+        <div class="col-lg-4 mb-4 ">
           <div class="card h-100">
             <h4 class="card-header">Coding Circle</h4>
             <div class="card-body">
@@ -77,7 +79,7 @@
             </div-->
           </div>
         </div>
-        <div class="col-lg-4 mb-4 zoom">
+        <div class="col-lg-4 mb-4">
           <div class="card h-100">
             <h4 class="card-header">Member of the Month</h4>
             <div class="card-body">
@@ -89,7 +91,7 @@
             </div-->
           </div>
         </div>
-        <div class="col-lg-4 mb-4 zoom">
+        <div class="col-lg-4 mb-4">
           <div class="card h-100">
             <h4 class="card-header">Joining WiCS</h4>
             <div class="card-body">
@@ -180,9 +182,25 @@
 
  </div>
     <!-- Footer -->
-    <footer class="py-5 bg-white">
-      <div class="container">
-        <p class="m-0 text-center text-info"><small>Copyright &copy; JHU WiCS 2018</small></p>
+
+
+    <footer class="py-4 bg-white">
+
+      <!-- Social Media -->
+
+      <div class="row" align="center">
+    <div class="column"><small style="color:rgb(3,144,164)"><b>JOIN US ON FACEBOOK</b></small></div>
+    <div class="column"><small style="color:rgb(3,144,164)"><b>CONTACT US</b></small></div>
+         <div class="column"> <a href="https://www.cs.jhu.edu/mailman/listinfo/wics" target="_blank" class="btn btn-info btn-md">Join Our Mailing List</a></div>
+</div>
+
+      <div class="row" align="center">
+          <div class="column"><a href="https://www.facebook.com/groups/jhuwicsgroup/" ><img src="img/FBsmall.png"class ="iconhover" > </a></div>
+        <div class="column"><small style="color:rgb(3,144,164)"><b>  wics@cs.jhu.edu</b></small></div>
+
+</div>
+        <p align="center"><small  style="color:rgb(3,144,164)">Copyright &copy; JHU WiCS 2018</small></p>
+
       </div>
       <!-- /.container -->
     </footer>
@@ -195,13 +213,18 @@
     <script  type="text/javascript" src="js/particles.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
 
+    <!-- Codepen JS -->
+    <script src='https://rawgit.com/CreateJS/EaselJS/master/lib/easeljs-NEXT.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/PreloadJS/1.0.1/preloadjs.min.js'></script>
+    <script type="text/javascript" src="js/canvas.js"></script>
 
       <!-- JQuery CDN and AOS animations JS-->
       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-    once: true});
+    once: true,
+    duration: 800});
   </script>
 
 

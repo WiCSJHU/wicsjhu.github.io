@@ -1,0 +1,17 @@
+body {
+  background-color: #5D4037;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  background-image: radial-gradient(rgba(0,0,0,0) 40%, rgba(0,0,0,1) 150%);
+  cursor: pointer;
+  pointer-events: none;
+}
