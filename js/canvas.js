@@ -1,6 +1,6 @@
 var stage = new createjs.StageGL("canvas", {antialias:true,preserveBuffer:true});
 
-var MAX=1000,
+var MAX=500,
     RADIUS = 30,
     COLORS = [
       {title: "ACM - WiCS", colors:["#17A2B8", "#17A2B8", "#058C8C", "#28B4D2", "#0390A5"]} ];
@@ -58,7 +58,7 @@ function init() {
 function showText() {
   if (!loader.loaded || !textReady) { return; }
   var text = new createjs.Text(title, "30px Archivo Black", "#F5F5F5")
-      .set({textAlign:"center",y:-10});
+      .set({textAlign:"center",y:-30});
   var b = text.getBounds();
   text.cache(b.x, b.y, b.width, b.height*1.5, 2);
   cont.addChildAt(text, 0);
@@ -93,8 +93,8 @@ function createSprite() {
       alpha: 0
     });
     var pos = Math.random() * 50;
-    sprite.x = 3*Math.sin(sprite.a) * pos;
-    sprite.y = Math.cos(sprite.a) * pos;
+    sprite.x = 4*Math.sin(sprite.a) * pos;
+    sprite.y = Math.cos(sprite.a) * pos-15;
     sprites.push(sprite);
   }
 }
@@ -122,11 +122,10 @@ function tick(event) {
   for (var i=sprites.length-1; i>=0; i--) {
     var sprite = sprites[i];
     sprite.x += Math.sin(sprite.a)*sprite.speed;
-    sprite.y += Math.cos(sprite.a)*sprite.speed;
-    sprite.scale *= 0.975;
+    sprite.scale *= 0.98;
     sprite.g *= 1.02;
-    sprite.y += sprite.g;
-    sprite.speed *= 0.990;
+    //sprite.y+=sprite.g;
+    sprite.speed *= 0.970;
     sprite.alpha = Math.min(1, sprite.alpha + 0.1);
 
     if (sprite.scale < 0.01) {
@@ -144,13 +143,13 @@ function tick(event) {
 window.addEventListener("resize", handleResize);
 function handleResize() {
   var w = stage.canvas.width = window.innerWidth;
-  var h = 450;
+  var h = 300;
 
   cont.x = w >> 1;
   cont.y = h >> 1;
   fill.scaleX = w/100;
   fill.scaleY = h/100;
-  RADIUS=w/90;
+  RADIUS=w/110;
 
   stage.updateViewport(w,h);
 }
