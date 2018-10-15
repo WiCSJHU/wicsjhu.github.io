@@ -58,7 +58,7 @@ var text;
 function showText() {
   if (!loader.loaded || !textReady) { return; }
   text = new createjs.Text(title, "25px Archivo Black", "#F5F5F5")
-      .set({textAlign:"center",y:-30});
+      .set({textAlign:"center",y:-10});
   var b = text.getBounds();
   text.cache(b.x, b.y, b.width, b.height*1.5, 2);
   cont.addChildAt(text, 0);
@@ -68,7 +68,7 @@ function showText2() {
   if (!loader.loaded || !textReady) { return; }
   cont.removeChild(text);
   text = new createjs.Text(title, "25px Archivo Black", "#17A2B8")
-      .set({textAlign:"center",y:-30});
+      .set({textAlign:"center",y:-10});
   var b = text.getBounds();
   text.cache(b.x, b.y, b.width, b.height*1.5, 2);
 
@@ -105,7 +105,7 @@ function createSprite() {
     });
     var pos = Math.random() * 50;
     sprite.x = 4*Math.sin(sprite.a) * pos;
-    sprite.y = Math.cos(sprite.a) * pos-15;
+    sprite.y = Math.cos(sprite.a) * pos;
     sprites.push(sprite);
   }
 }
@@ -178,7 +178,7 @@ if (sprite.speed < 0.005) {
 window.addEventListener("resize", handleResize);
 function handleResize() {
   var w = stage.canvas.width = window.innerWidth;
-  var h = 400;
+  var h = 350;
 
   cont.x = w >> 1;
   cont.y = h >> 1;
