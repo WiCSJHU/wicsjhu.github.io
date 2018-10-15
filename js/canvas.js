@@ -1,6 +1,6 @@
 var stage = new createjs.StageGL("canvas", {antialias:true,preserveBuffer:true});
 
-var MAX=800,
+var MAX=600,
     RADIUS = 30,
     COLORS = [
       {title: "ACM - WiCS", colors:["#17A2B8", "#17A2B8", "#058C8C", "#28B4D2", "#0390A5"]} ];
@@ -52,7 +52,7 @@ var text;
   textTimeout = setTimeout(function() {
     textReady = true;
     showText();
-  }, 1500);
+  }, 1400);
 }
 
 function showText() {
