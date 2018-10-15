@@ -178,7 +178,7 @@ if (sprite.speed < 0.005) {
 window.addEventListener("resize", handleResize);
 function handleResize() {
   var w = stage.canvas.width = window.innerWidth;
-  var h = 300;
+  var h = 400;
 
   cont.x = w >> 1;
   cont.y = h >> 1;
