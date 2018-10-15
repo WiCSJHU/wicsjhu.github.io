@@ -3,7 +3,7 @@ var stage = new createjs.StageGL("canvas", {antialias:true,preserveBuffer:true})
 var MAX=600,
     RADIUS = 30,
     COLORS = [
-      {title: "ACM - WiCS", colors:["#17A2B8", "#17A2B8", "#058C8C", "#28B4D2", "#0390A5"]} ];
+      {title: " JHU ACM-WiCS", colors:["#17A2B8", "#17A2B8", "#058C8C", "#28B4D2", "#0390A5"]} ];
 
 var colors, title, bgColor;
 var textTimeout;
