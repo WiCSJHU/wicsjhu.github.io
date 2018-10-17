@@ -51,9 +51,9 @@ transform:scale(1.1);
 
 .navbar-custom {
     background-color: rgba(23, 162, 184,1);
-    -webkit-box-shadow: 0 4px 4px -6px #999;
-    -moz-box-shadow: 0 4px 4px -6px #999;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 2px 4px -6px #999;
+    -moz-box-shadow: 0 2px 4px -6px #999;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 #particles-js {

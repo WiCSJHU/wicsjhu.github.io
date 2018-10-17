@@ -1,9 +1,9 @@
 var stage = new createjs.StageGL("canvas", {antialias:true,preserveBuffer:true});
 
-var MAX=500,
+var MAX=400,
     RADIUS = 30,
     COLORS = [
-      {title: "ACM - WiCS", colors:["#17A2B8", "#17A2B8", "#058C8C", "#28B4D2", "#0390A5"]} ];
+      {title: " JHU WiCS", colors:["#17A2B8", "#17A2B8", "#058C8C", "#28B4D2", "#0390A5"]} ];
 
 var colors, title, bgColor;
 var textTimeout;
@@ -13,7 +13,7 @@ var sb, ss,
 
 // Preload the font, since it sometimes isn't ready in time.
 var loader = new createjs.FontLoader({
-			src: "https://fonts.googleapis.com/css?family=Archivo+Black",
+			src: "https://fonts.googleapis.com/css?family=Archivo+Black|Sigmar+One",
 			type: "fontcss"
 }, true);
 loader.on("complete", showText);
@@ -44,7 +44,7 @@ function init() {
 
   sprites.length = store.length = 0;
   cont.removeAllChildren();
-
+var text;
 
   // Add text, fade in after 3s
   textReady = false;
@@ -52,15 +52,26 @@ function init() {
   textTimeout = setTimeout(function() {
     textReady = true;
     showText();
-  }, 1200);
+  }, 1400);
 }
 
 function showText() {
   if (!loader.loaded || !textReady) { return; }
-  var text = new createjs.Text(title, "30px Archivo Black", "#F5F5F5")
-      .set({textAlign:"center",y:-30});
+  text = new createjs.Text(title, "25px Archivo Black", "#F5F5F5")
+      .set({textAlign:"center",y:-10});
   var b = text.getBounds();
   text.cache(b.x, b.y, b.width, b.height*1.5, 2);
+  cont.addChildAt(text, 0);
+}
+
+function showText2() {
+  if (!loader.loaded || !textReady) { return; }
+  cont.removeChild(text);
+  text = new createjs.Text(title, "25px Sigmar One", "#17A2B8")
+      .set({textAlign:"center",y:-10});
+  var b = text.getBounds();
+  text.cache(b.x, b.y, b.width, b.height*1.5, 2);
+
   cont.addChildAt(text, 0);
 }
 
@@ -68,7 +79,7 @@ function showText() {
 function getSprite() {
   var sprite = null;
   if (store.length == 0) {
-    if (sprites.length >= MAX) { return; }
+    if (sprites.length >= MAX) { showText2(); return; }
     sprite = new createjs.Sprite(ss);
   } else {
     sprite = store.pop();
@@ -94,7 +105,7 @@ function createSprite() {
     });
     var pos = Math.random() * 50;
     sprite.x = 4*Math.sin(sprite.a) * pos;
-    sprite.y = Math.cos(sprite.a) * pos-15;
+    sprite.y = Math.cos(sprite.a) * pos;
     sprites.push(sprite);
   }
 }
@@ -120,19 +131,43 @@ function tick(event) {
   createSprite();
 
   for (var i=sprites.length-1; i>=0; i--) {
+  if(sprites.length < MAX)
+  {
     var sprite = sprites[i];
-    sprite.x += Math.sin(sprite.a)*sprite.speed;
+    sprite.x += Math.sin(sprite.a)*sprite.speed*2;
+    sprite.y += Math.cos(sprite.a)*sprite.speed;
     sprite.scale *= 0.98;
     sprite.g *= 1.02;
     //sprite.y+=sprite.g;
     sprite.speed *= 0.970;
     sprite.alpha = Math.min(1, sprite.alpha + 0.1);
-
-    if (sprite.scale < 0.01) {
-      sprites.splice(i, 1);
-      cont.removeChild(sprite);
-      returnSprite(sprite);
     }
+    else
+      {
+
+
+    var sprite = sprites[i];
+    sprite.x += Math.sin(sprite.a)*sprite.speed*3;
+    sprite.y += Math.cos(sprite.a)*sprite.speed;
+    sprite.scale *= 0.98;
+sprite.speed *= 0.995;
+if (sprite.speed < 0.005) {
+      sprite.speed=0.005;
+      }
+     if (sprite.scale < 0.05) {
+      sprite.scale=0.05;
+      }
+
+    }
+
+
+//    if (sprite.scale < 0.01) {
+//      sprites.splice(i, 1);
+//      cont.removeChild(sprite);
+//      returnSprite(sprite);
+//    }
+
+
   }
 
 
@@ -143,13 +178,13 @@ function tick(event) {
 window.addEventListener("resize", handleResize);
 function handleResize() {
   var w = stage.canvas.width = window.innerWidth;
-  var h = 300;
+  var h = 350;
 
   cont.x = w >> 1;
   cont.y = h >> 1;
   fill.scaleX = w/100;
   fill.scaleY = h/100;
-  RADIUS=w/110;
+  RADIUS=w/100;
 
   stage.updateViewport(w,h);
 }
