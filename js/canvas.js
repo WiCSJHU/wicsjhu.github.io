@@ -1,9 +1,9 @@
 var stage = new createjs.StageGL("canvas", {antialias:true,preserveBuffer:true});
 
-var MAX=600,
+var MAX=400,
     RADIUS = 30,
     COLORS = [
-      {title: " JHU ACM-WiCS", colors:["#17A2B8", "#17A2B8", "#058C8C", "#28B4D2", "#0390A5"]} ];
+      {title: " JHU WiCS", colors:["#17A2B8", "#17A2B8", "#058C8C", "#28B4D2", "#0390A5"]} ];
 
 var colors, title, bgColor;
 var textTimeout;
@@ -13,7 +13,7 @@ var sb, ss,
 
 // Preload the font, since it sometimes isn't ready in time.
 var loader = new createjs.FontLoader({
-			src: "https://fonts.googleapis.com/css?family=Archivo+Black",
+			src: "https://fonts.googleapis.com/css?family=Archivo+Black|Sigmar+One",
 			type: "fontcss"
 }, true);
 loader.on("complete", showText);
@@ -67,7 +67,7 @@ function showText() {
 function showText2() {
   if (!loader.loaded || !textReady) { return; }
   cont.removeChild(text);
-  text = new createjs.Text(title, "25px Archivo Black", "#17A2B8")
+  text = new createjs.Text(title, "25px Sigmar One", "#17A2B8")
       .set({textAlign:"center",y:-10});
   var b = text.getBounds();
   text.cache(b.x, b.y, b.width, b.height*1.5, 2);
