@@ -108,6 +108,7 @@ transform:scale(1.1);
   top: 0;
   right: -20px;
   transition: 0.5s;
+
 }
 
 .btn:hover span {
