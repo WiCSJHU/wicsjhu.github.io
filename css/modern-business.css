@@ -18,7 +18,7 @@ body {
 
 .column {
     float: left;
-    width: 33.33%;
+
 }
 .row:after {
     content: "";
@@ -91,7 +91,7 @@ transform:scale(1.1);
   color: rgb(23, 162, 184);
   background: none;
   cursor: pointer;
-  margin: 5px;
+  margin: 2px;
 }
 
 .btn span {

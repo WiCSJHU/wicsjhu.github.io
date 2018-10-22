@@ -1,5 +1,5 @@
 var stage = new createjs.StageGL("canvas", {antialias:true,preserveBuffer:true});
-
+var bitmap;
 var MAX=400,
     RADIUS = 30,
     COLORS = [
@@ -16,7 +16,7 @@ var loader = new createjs.FontLoader({
 			src: "https://fonts.googleapis.com/css?family=Archivo+Black|Sigmar+One",
 			type: "fontcss"
 }, true);
-loader.on("complete", showText);
+loader.on("complete", showImage);
 loader.load();
 var textReady = false;
 
@@ -51,35 +51,40 @@ var text;
   clearTimeout(textTimeout);
   textTimeout = setTimeout(function() {
     textReady = true;
-    showText();
-  }, 1400);
+    showImage();
+  }, 1500);
 }
 
-function showText() {
+function showImage() {
   if (!loader.loaded || !textReady) { return; }
-  text = new createjs.Text(title, "25px Archivo Black", "#F5F5F5")
-      .set({textAlign:"center",y:-10});
-  var b = text.getBounds();
-  text.cache(b.x, b.y, b.width, b.height*1.5, 2);
-  cont.addChildAt(text, 0);
+
+  var image = new Image();
+
+  image.onload = loadingComplete;
+  image.crossOrigin = "Anonymous";
+  image.src = "img/logo.png";
+  stage.update();
 }
 
-function showText2() {
-  if (!loader.loaded || !textReady) { return; }
-  cont.removeChild(text);
-  text = new createjs.Text(title, "25px Sigmar One", "#17A2B8")
-      .set({textAlign:"center",y:-10});
-  var b = text.getBounds();
-  text.cache(b.x, b.y, b.width, b.height*1.5, 2);
+function loadingComplete() {
+if(bitmap)
+    stage.removeChild(bitmap);
+	bitmap = new createjs.Bitmap(this);
+	bitmap.scaleX=0.4;
+    bitmap.scaleY=0.4;
+	bitmap.x = canvas.width - this.width*bitmap.scaleX>>1;
+	bitmap.y = canvas.height - this.height*bitmap.scaleY>>1;
 
-  cont.addChildAt(text, 0);
+	stage.addChild(bitmap);
+
+	stage.update();
 }
 
 // Object Pool
 function getSprite() {
   var sprite = null;
   if (store.length == 0) {
-    if (sprites.length >= MAX) { showText2(); return; }
+    if (sprites.length >= MAX) { return; }
     sprite = new createjs.Sprite(ss);
   } else {
     sprite = store.pop();
@@ -149,13 +154,13 @@ function tick(event) {
     var sprite = sprites[i];
     sprite.x += Math.sin(sprite.a)*sprite.speed*3;
     sprite.y += Math.cos(sprite.a)*sprite.speed;
-    sprite.scale *= 0.98;
+    sprite.scale *= 0.999;
 sprite.speed *= 0.995;
-if (sprite.speed < 0.005) {
-      sprite.speed=0.005;
+if (sprite.speed < 0.001) {
+      sprite.speed=0.00;
       }
-     if (sprite.scale < 0.05) {
-      sprite.scale=0.05;
+     if (sprite.scale < 0.03 ) {
+     sprite.scale=0.04;
       }
 
     }
@@ -187,14 +192,10 @@ function handleResize() {
   RADIUS=w/100;
 
   stage.updateViewport(w,h);
+    showImage();
 }
 handleResize();
 
-stage.on("stagemousedown", function() {
-    stage.autoClear = false;
-})
 
-// Click to draw
-stage.on("stagemouseup", init);
 document.getElementById("overlay").addEventListener("click", init)
 init();
