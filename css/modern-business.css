@@ -41,7 +41,7 @@ body {
 
 
 .navbar-custom {
-  background-color: rgba(23, 162, 184,1);
+  background-color: rgba(15, 82, 186,1);
     -webkit-box-shadow: 0 2px 4px -6px #999;
     -moz-box-shadow: 0 2px 4px -6px #999;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
@@ -64,7 +64,7 @@ body::-webkit-scrollbar-track {
 }
 body::-webkit-scrollbar-thumb {
 
-	background-color: #058C8C;
+	background-color: #0F52BA;
 	outline: 1px solid slategrey;
 }
 
@@ -88,7 +88,8 @@ transform:scale(1.1);
   display: inline-block;
   border-radius: 0px;
   border-width: medium;
-  color: rgb(23, 162, 184);
+  color: rgb(15, 82, 186,1);
+  border-color: rgb(15, 82, 186,1);
   background: none;
   cursor: pointer;
   margin: 2px;

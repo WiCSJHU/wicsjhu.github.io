@@ -3,7 +3,7 @@ var bitmap;
 var MAX=400,
     RADIUS = 30,
     COLORS = [
-      {title: " JHU WiCS", colors:["#17A2B8", "#17A2B8", "#058C8C", "#28B4D2", "#0390A5"]} ];
+      {title: " JHU WiCS", colors:["#17A2B8", "#0E4D92", "#058C8C", "#28B4D2", "#0390A5"]} ];
 
 var colors, title, bgColor;
 var textTimeout;
