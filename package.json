@@ -1,38 +1,45 @@
 {
-    "title": "Modern Business",
-    "name": "startbootstrap-modern-business",
-    "version": "4.1.1",
-    "description": "A multipurpose HTML website template built with Bootstrap",
-    "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive",
-        "theme",
-        "template"
-    ],
-    "homepage": "https://startbootstrap.com/template-overviews/modern-business",
-    "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-modern-business/issues",
-        "email": "feedback@startbootstrap.com"
-    },
-    "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (http://davidmiller.io/)"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-modern-business.git"
-    },
-    "dependencies": {
-        "bootstrap": "4.1.1",
-        "font-awesome": "^4.7.0",
-        "jquery": "3.3.1",
-        "particles.js": "^2.0.0"
-    },
-    "devDependencies": {
-        "browser-sync": "2.24.5",
-        "gulp": "^3.9.1"
-    }
+  "title": "Modern Business",
+  "name": "startbootstrap-modern-business",
+  "version": "4.1.1",
+  "description": "A multipurpose HTML website template built with Bootstrap",
+  "keywords": [
+    "css",
+    "sass",
+    "html",
+    "responsive",
+    "theme",
+    "template"
+  ],
+  "homepage": "https://startbootstrap.com/template-overviews/modern-business",
+  "bugs": {
+    "url": "https://github.com/BlackrockDigital/startbootstrap-modern-business/issues",
+    "email": "feedback@startbootstrap.com"
+  },
+  "license": "MIT",
+  "author": "Start Bootstrap",
+  "contributors": [
+    "David Miller (http://davidmiller.io/)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlackrockDigital/startbootstrap-modern-business.git"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
+    "bootstrap": "4.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "3.3.1",
+    "particles.js": "^2.0.0",
+    "react-html-parser": "^2.0.2"
+  },
+  "devDependencies": {
+    "browser-sync": "2.24.5",
+    "gulp": "^3.9.1"
+  },
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
