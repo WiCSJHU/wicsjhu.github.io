@@ -109,11 +109,18 @@ footer{
 
 .btn:hover span {
   padding-right: 25px;
+
+
 }
 
+.btn:hover{
+    background: #008ECC;
+ border-color: #000080;
+}
 .btn:hover span:after {
   opacity: 1;
   right: 0;
+
 }
 
 body::-webkit-scrollbar

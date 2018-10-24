@@ -113,6 +113,10 @@ transform:scale(1.1);
   right: 0;
 }
 
+.btn:hover{
+    background: #008ECC;
+ border-color: #000080;
+}
 
 footer{
     bottom:0px;
