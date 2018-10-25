@@ -10,6 +10,10 @@ body {
   font-family: 'Chivo', sans-serif;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 @media (min-width: 992px) {
   body {
     padding-top: 56px;

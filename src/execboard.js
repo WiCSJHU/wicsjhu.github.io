@@ -44,7 +44,7 @@ function extractFirstName(nameString)
 //takes the 2D array of members and generates a list of HTML blocks for rendering
 const memArray=members.map((person)=>
 
-        <div data-aos= "fade-up"  className="col-sm-3 mb-4">
+        <div data-aos= "flip-down"  className="col-sm-3 mb-4">
           <div className="card h-100 text-center">
             <img className="card-img-top" src={"img/members/"+extractFirstName(person.length==5 ? person[4] : person[0])+".jpg"} alt=""/>
             <div className="card-body">

@@ -26,7 +26,7 @@ function extractFirstName(nameString) {
 var memArray = members.map(function (person) {
   return React.createElement(
     'div',
-    { 'data-aos': 'fade-up', className: 'col-sm-3 mb-4' },
+    { 'data-aos': 'flip-down', className: 'col-sm-3 mb-4' },
     React.createElement(
       'div',
       { className: 'card h-100 text-center' },
