@@ -29,31 +29,12 @@
 
   <body>
 
+
+
     <!-- Navigation -->
-    <nav  class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top navbar-custom">
-      <div class="container">
-        <a class="navbar-brand" href="/"><img src="img/logo.png" style="max-height: 40px"/></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" style="color: white">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="events">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="faq">FAQ</a>
-            </li> 
-          </ul>
-        </div>
-      </div>
-    </nav>
+     <div id="navbar_container_about" ></div>
+
+
 
     <!-- Page Content -->
     <div class="container">
@@ -147,14 +128,14 @@
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 
-  <!-- Load react component for displaying members -->
+  <!-- Load react components -->
   <script src="execboard.js"></script>
   <script src="members.js"></script>
-
+  <script src="navbar.js"></script>
   <script>
     AOS.init({
     once: true,
-     duration: 450}
+     duration: 750}
     );
   </script>
 

@@ -28,30 +28,8 @@
 
 </div>
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-xl navbar-dark   navbar-custom">
-      <div class="container">
-        <a class="navbar-brand"><img src="img/logo.png" style="max-height: 40px"/></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" style="color: white">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="events">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="faq">FAQ</a>
-            </li> 
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div id="navbar_container_home" ></div>
+
     <!-- Graphics and big particles -->
     <canvas width="device-width" height="350" id="canvas"></canvas>
     <div id="overlay" ></div>
@@ -216,6 +194,15 @@
       <!-- JQuery CDN and AOS animations JS-->
       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+     <!-- ReactJS -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+        <!-- Load react components -->
+  <script src="navbar.js"></script>
+
+
   <script>
     AOS.init({
     once: true,
