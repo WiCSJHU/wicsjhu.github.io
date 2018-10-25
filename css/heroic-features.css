@@ -26,6 +26,9 @@ margin: 2px;
 }
 .iconhover{
  transition: transform .2s;
+ -webkit-box-shadow: 0 2px 4px -6px #999;
+    -moz-box-shadow: 0 2px 4px -6px #999;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .iconhover:hover{
 transform:scale(1.1);
@@ -50,6 +53,18 @@ transform:scale(1.1);
 }
 .card {
   height: 100%;
+}
+
+.jumbotron{
+    -webkit-box-shadow: 0 2px 4px -6px #999;
+    -moz-box-shadow: 0 2px 4px -6px #999;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    -webkit-box-shadow: 0 2px 4px -6px #999;
+    -moz-box-shadow: 0 2px 4px -6px #999;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .navbar-custom {
