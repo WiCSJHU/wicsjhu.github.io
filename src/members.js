@@ -62,7 +62,7 @@ const members=[
 '']
 
 ,['Nancy Wang',
-'']
+'CS/Econ junior; interested in bridging people + societal barriers. Mostly likes random walks and mangoes.', "nancy"]
 
 ,['Kristin Yim',
 '']
