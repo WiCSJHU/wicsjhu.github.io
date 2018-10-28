@@ -8,7 +8,7 @@ const num_columns = 4;
 const members=[
 
 ['Mia Boloix',
-'Sophomore CS/Math double major; enjoys all things vegan &amp; is most definitely <i>#teamVim</i>.']
+'Sophomore CS/Math double major; enjoys all things vegan &amp; is most definitely #teamVim.']
 
 ,['Camila Camacho',
 'Camila is the vice chair of ACM and works for the Hopkins IT department on JaySquad.']
@@ -23,7 +23,7 @@ const members=[
 'Junior studying Computer Science and Cognitive Science; passionate about education and avoiding gluten.']
 
 ,['Andrew Rojas',
-'Treasurer of ACM, apple eater, bad cook. <i>West coast === best coast</i>']
+'Treasurer of ACM, apple eater, bad cook. West coast === best coast']
 
 ,['Sara Weill',
 'Sara is a sophomore CS/CE double major interested in cybersecurity; enjoys volunteering locally with APO.']
