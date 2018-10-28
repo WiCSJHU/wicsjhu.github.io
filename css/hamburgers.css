@@ -9,6 +9,8 @@
 
 .hamburger {
   padding: 15px 0px;
+  outline: none !important;
+  box-shadow: none;
   display: inline-block;
   cursor: pointer;
   transition-property: opacity, filter;
