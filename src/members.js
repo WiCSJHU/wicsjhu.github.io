@@ -16,17 +16,26 @@ const members = [
   , ['Coco Li',
     'Coco is a junior studying cognitive science and computer science; can be easily made happy with food.']
 
+  , ['Rena Liu',
+  'CS frosh currently curious about blockchain and political theory. Doesn’t really want to take a side, but uses emacs at the moment.']
+
   , ['Aubin Lohier',
-    'CS sophomore, from NYC (QUEENS); enjoys Java, coffee, and not burning his kitchen down when he cooks.']
+  'CS sophomore, from NYC (QUEENS); enjoys Java, coffee, and not burning his kitchen down when he cooks.']
 
   , ['Julia Oppenheim',
     'Junior studying Computer Science and Cognitive Science; passionate about education and avoiding gluten.']
 
+  , ['Bill Watson and Bailey Parker',
+  '"We\'re being shipped as a unit. An absolute unit."', "billbailey"]
+
   , ['Andrew Rojas',
-    'Treasurer of ACM, apple eater, bad cook. West coast === best coast']
+  'Treasurer of ACM, apple eater, bad cook. West coast === best coast']
+
+  , ['Nancy Wang',
+  'CS/Econ junior; interested in bridging people + societal barriers. Mostly likes random walks and mangoes.', "nancy"]
 
   , ['Sara Weill',
-    'Sara is a sophomore CS/CE double major interested in cybersecurity; enjoys volunteering locally with APO.']
+  'Sara is a sophomore CS/CE double major interested in cybersecurity; enjoys volunteering locally with APO.']
 
   , ['Tony Yang',
     'Junior studying CS with an interest in networks; involved in oSTEM and local volunteering; enjoys cooking and is willing to try any food at least once.']
@@ -38,9 +47,6 @@ const members = [
     '']
 
   , ['Hailey Lee',
-    '']
-
-  , ['Rena Liu',
     '']
 
   , ['Daya Lu',
@@ -61,14 +67,8 @@ const members = [
   , ['Sharmila Tamby',
     '']
 
-  , ['Nancy Wang',
-    'CS/Econ junior; interested in bridging people + societal barriers. Mostly likes random walks and mangoes.', "nancy"]
-
   , ['Kristin Yim',
-    '']
-
-  , ['Bill Watson and Bailey Parker',
-    '"We\'re being shipped as a unit. An absolute unit."', "billbailey"]
+  '']
 
 ];
 
