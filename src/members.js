@@ -8,7 +8,7 @@ const num_columns = 4;
 const members = [
 
   ['Mia Boloix',
-    'Sophomore CS/Math double major; enjoys all things vegan and is most definitely #teamVim.']
+    'Sophomore CS/Math double major; enjoys all things vegan & is most definitely #teamVim.']
 
   , ['Camila Camacho',
     'Camila is the vice chair of ACM and works for the Hopkins IT department on JaySquad.']
@@ -41,7 +41,7 @@ const members = [
     'Junior studying CS with an interest in networks; involved in oSTEM and local volunteering; enjoys cooking and is willing to try any food at least once.']
 
   , ['Evonne Zhu',
-    'Evonne is a junior majoring in Computer Science with minors in Music and Film and Media Studies.']
+    'Evonne is a junior majoring in Computer Science with minors in Music and Film & Media Studies.']
 
   , ['Aly Kruglak',
     '']
