@@ -13,6 +13,9 @@ const members = [
   , ['Camila Camacho',
     'Camila is the vice chair of ACM and works for the Hopkins IT department on JaySquad.']
 
+  , ['Jonghae Lee',
+    'Jonghae is a Computer Science junior. She likes to bake!! Try giving her new baking challenges.']
+  
   , ['Coco Li',
     'Coco is a junior studying cognitive science and computer science; can be easily made happy with food.']
 
@@ -30,6 +33,9 @@ const members = [
 
   , ['Andrew Rojas',
   'Treasurer of ACM, apple eater, bad cook. West coast === best coast']
+
+  , ['Sharmila Tamby',
+    'Master\'s student studying Computer Science; interested in the health tech industry; also loves learning new languages (both coding and natural!)']
 
   , ['Nancy Wang',
   'CS/Econ junior; interested in bridging people + societal barriers. Mostly likes random walks and mangoes.', "nancy"]
@@ -62,9 +68,6 @@ const members = [
     '']
 
   , ['Gayatri Susarla',
-    '']
-
-  , ['Sharmila Tamby',
     '']
 
   , ['Kristin Yim',
