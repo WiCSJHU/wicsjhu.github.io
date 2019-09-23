@@ -4,6 +4,7 @@
     "version": "5.1.4",
     "scripts": {
         "start": "gulp watch"
+		"postinstall": "gulp default"
     },
     "description": "Creative is a stylish one page HTML theme for Bootstrap.",
     "keywords": [
