@@ -34,7 +34,18 @@
         "jquery": "^3.4.1",
         "jquery.easing": "^1.4.1",
         "magnific-popup": "^1.1.0",
-        "node-sass": "^4.12.0"
+        "node-sass": "^4.12.0",
+        "browser-sync": "^2.26.7",
+        "del": "4.0.0",
+        "gulp": "4.0.0",
+        "gulp-autoprefixer": "6.0.0",
+        "gulp-clean-css": "4.0.0",
+        "gulp-header": "2.0.7",
+        "gulp-plumber": "^1.2.1",
+        "gulp-rename": "1.4.0",
+        "gulp-sass": "4.0.2",
+        "gulp-uglify": "3.0.2",
+        "merge-stream": "^1.0.1"
     },
     "devDependencies": {
         "browser-sync": "^2.26.7",
