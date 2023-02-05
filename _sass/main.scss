@@ -24,6 +24,8 @@ body {
 
 .content-wrapper {
     padding: 2em;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -91,6 +93,10 @@ header {
 
 iframe {
     margin: 2em 0;
+}
+
+.subtitle {
+    color: $gray;
 }
 
 .navbar {
