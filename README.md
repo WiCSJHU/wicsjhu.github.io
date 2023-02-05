@@ -12,3 +12,9 @@ To add a sponsor to the home page:
 
 1. Add an image (logo) under the `assets/images` directory
 2. Add the sponsor's name and image path to `_data/sponsors.yml`
+
+
+## Updating contact info
+To update contact cards, update `_data/contacts.yml`.
+
+Icon names are from [Google Material Symbols](https://fonts.google.com/icons).

@@ -4,7 +4,7 @@
 
 WiCS is proudly sponsored by:
 
-<div class="sponsors-wrapper">
+<div class="flex-wrapper">
 {% for sponsor in site.data.sponsors %}
 <img src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.name }}" />
 {% endfor %}

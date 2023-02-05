@@ -44,21 +44,39 @@ h2 {
     margin-bottom: 1em;
     align-self: center;
     width: max-content;
-    border-bottom: 3px solid #f4623a;
+    border-bottom: 3px solid $accent-color;
 }
 
 iframe {
     margin: 2em 0;
 }
 
-.sponsors-wrapper {
+.flex-wrapper {
     margin: 2em 0;
     display: flex;
-    align-items: center;
+    width: max-content;
     gap: 2em;
 
     img {
         height: 50px;
         overflow: hidden;
+    }
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+
+    .contact-icon {
+        font-size: 2em;
+        width: max-content;
+        color: $accent-color;
+    }
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
