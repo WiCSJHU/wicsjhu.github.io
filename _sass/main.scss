@@ -31,7 +31,7 @@ section {
 h1 {
     font-family: $font-family-title;
     font-size: 2em;
-    color: $wics-blue;
+    color: $primary-color;
     margin-bottom: 1em;
     text-transform: uppercase;
     text-align: center;
@@ -40,10 +40,12 @@ h1 {
 h2 {
     font-family: $font-family-title;
     font-size: 1.5em;
+    font-weight: bold;
+    color: $primary-color-dark;
     padding-bottom: .5em;
     width: 100%;
     margin-bottom: 1em;
-    border-bottom: 3px solid $wics-blue;
+    border-bottom: 3px solid $primary-color-light;
 }
 
 h3 {
@@ -88,7 +90,7 @@ iframe {
     .contact-icon {
         font-size: 2em;
         width: max-content;
-        color: $accent-color;
+        color: $wics-blue;
     }
     .contact-info {
         display: flex;
@@ -121,7 +123,7 @@ iframe {
     .member-icon {
         font-size: 5em;
         width: max-content;
-        color: $accent-color;
+        color: $wics-blue;
     }
     .member-info {
         text-align: center;
