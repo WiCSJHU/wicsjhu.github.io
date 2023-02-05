@@ -60,7 +60,7 @@ p:last-of-type {
 }
 
 a {
-    color: #222;
+    color: $gray-dark;
 }
 
 header {
@@ -93,7 +93,7 @@ iframe {
     li, .nav-title {
         font-family: $font-family-title;
         text-transform: lowercase;
-        color: #aaa;
+        color: $gray-light;
     }
     li:before, .nav-title:after {
         content: "/";
@@ -103,12 +103,12 @@ iframe {
         color: inherit;
     }
     .nav-link {
-        color: #222;
+        color: $gray-dark;
     }
     .nav-link:focus,
     .nav-link:hover {
         font-weight: 500;
-        color: $wics-blue;
+        color: $primary-color;
     }
 }
 
@@ -167,7 +167,7 @@ iframe {
     .contact-icon {
         font-size: 2em;
         width: max-content;
-        color: $wics-blue;
+        color: $primary-color;
     }
     .contact-info {
         display: flex;
@@ -198,7 +198,7 @@ iframe {
     .member-icon {
         font-size: 5em;
         width: max-content;
-        color: $wics-blue;
+        color: $primary-color;
     }
     .member-info {
         margin: 1em 0;
@@ -207,6 +207,76 @@ iframe {
         font-family: $font-family-title;
         text-transform: lowercase;
         font-size: .85em;
-        color: #777;
+        color: $gray;
     }
+}
+
+.member.chair {
+    .member-icon {
+        color: $purple;
+    }
+    .member-position {
+        color: $purple-dark;
+    }
+}
+
+.member.vice-chair {
+    .member-icon {
+        color: $green;
+    }
+    .member-position {
+        color: $green-dark;
+    }
+}
+
+.member.events-chair {
+    .member-icon {
+        color: $yellow;
+    }
+    .member-position {
+        color: $yellow-dark;
+    }
+}
+
+.member.treasurer {
+    .member-icon {
+        color: $red;
+    }
+    .member-position {
+        color: $red-dark;
+    }
+}
+
+.member.secretary {
+    .member-icon {
+        color: $orange;
+    }
+    .member-position {
+        color: $orange-dark;
+    }
+}
+
+.orange {
+    color: $orange;
+    border-color: $orange-light;
+}
+
+.yellow {
+    color: $yellow;
+    border-color: $yellow-light;
+}
+
+.green {
+    color: $green;
+    border-color: $green-light;
+}
+
+.blue {
+    color: $blue;
+    border-color: $blue-light;
+}
+
+.purple {
+    color: $purple;
+    border-color: $purple-light;
 }

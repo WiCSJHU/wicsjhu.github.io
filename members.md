@@ -5,7 +5,8 @@ layout: default
 
 <div class="grid-wrapper">
 {% for member in site.members %}
-    <article class="member">
+    {% assign pos = member.position | downcase | split: ' ' | join: '-' %}
+    <article class="member{% if member.position %} {{ pos }}{% endif %}">
         {% if member.photo %}
         <img src="{{ member.photo }}" alt="Photo of {{ member.name }}" />
         {% else %}
