@@ -2,6 +2,8 @@ body {
     font-family: $font-family-body;
     font-size: 16px;
     line-height: 1.25em;
+    display: flex;
+    justify-content: center;
 }
 
 .material-symbols-outlined {
@@ -10,6 +12,18 @@ body {
     'wght' 400,
     'GRAD' 0,
     'opsz' 48
+}
+
+.page-container {
+    width: 100%;
+    max-width: 960px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    padding: 2em;
 }
 
 h1 {
