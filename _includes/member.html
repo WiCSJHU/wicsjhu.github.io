@@ -1,7 +1,15 @@
 {% assign member = include.member %}
-{% assign pos = member.position | downcase | split: ' ' | join: '-' %}
 
-<article class="member{% if member.position %} {{ pos }}{% endif %}">
+{% assign classes = '' %}
+{% if member.position %}
+    {% assign pos = member.position | downcase | split: ' ' | join: '-' %}
+    {% assign classes = classes | append: ' ' | append: pos %}
+{% endif %}
+{% if member.status %}
+    {% assign classes = classes | append: ' ' | append: member.status %}
+{% endif %}
+
+<article class="member{{ classes }}">
     {% if member.photo %}
     <img src="{{ member.photo }}" alt="Photo of {{ member.name }}" />
     {% else %}
@@ -17,8 +25,8 @@
         <span class="member-position">{{ member.position }}</span>
         {% endif %}
 
-        {% if member.alum %}
-        <span class="member-alum">alum</span>
+        {% if member.status %}
+        <span class="member-status">{{ member.status }}</span>
         {% endif %}
 
         {% if member.membership %}

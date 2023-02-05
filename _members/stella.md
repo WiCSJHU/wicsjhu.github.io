@@ -1,6 +1,7 @@
 ---
 name: Stella Huo
 position: Secretary
+status: active
 membership: 2022-present
 ---
 

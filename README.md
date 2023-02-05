@@ -20,7 +20,7 @@ Example:
 name: Ada Lovelace
 position: Chair # optional field
 photo: assets/images/members/ada.png # optional field
-alum: true # optional field
+status: active # 'active', 'current', or 'alum'
 membership: 2023-present # optional field
 ---
 This is a short sentence about Ada!

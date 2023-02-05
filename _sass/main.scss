@@ -347,7 +347,7 @@ iframe {
         font-size: .9em;
         color: $gray;
     }
-    .member-dates, .member-alum {
+    .member-dates, .member-status {
         font-family: $font-family-title;
         color: $gray;
         font-weight: 400;
@@ -365,7 +365,11 @@ iframe {
         color: $purple;
     }
     .member-position {
+        color: $purple;
+    }
+    .member-status, .member-dates {
         color: $purple-dark;
+        background: $purple-light;
     }
 }
 
@@ -374,7 +378,11 @@ iframe {
         color: $green;
     }
     .member-position {
+        color: $green;
+    }
+    .member-status, .member-dates {
         color: $green-dark;
+        background: $green-light;
     }
 }
 
@@ -383,7 +391,11 @@ iframe {
         color: $yellow;
     }
     .member-position {
+        color: $yellow;
+    }
+    .member-status, .member-dates {
         color: $yellow-dark;
+        background: $yellow-light;
     }
 }
 
@@ -392,7 +404,11 @@ iframe {
         color: $red;
     }
     .member-position {
+        color: $red;
+    }
+    .member-status, .member-dates {
         color: $red-dark;
+        background: $red-light;
     }
 }
 
@@ -401,7 +417,11 @@ iframe {
         color: $orange;
     }
     .member-position {
+        color: $orange;
+    }
+    .member-status, .member-dates {
         color: $orange-dark;
+        background: $orange-light;
     }
 }
 

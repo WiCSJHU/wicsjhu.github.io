@@ -2,6 +2,7 @@
 name: Ujvala Pradeep
 position: Treasurer
 photo: assets/images/members/ujvala.png
+status: active
 membership: 2022-present
 ---
 

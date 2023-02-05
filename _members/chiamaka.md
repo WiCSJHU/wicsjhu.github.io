@@ -1,7 +1,8 @@
 ---
 name: Chiamaka Anaemeribe
 photo: assets/images/members/chiamaka.png
-membership: 2021-present
+status: active
+membership: 2020-present
 ---
 
 CS junior minoring in E&M with an interest in Robotics;

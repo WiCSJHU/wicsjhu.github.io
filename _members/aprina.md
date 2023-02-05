@@ -1,5 +1,6 @@
 ---
 name: Aprina Wang
+status: active
 membership: 2022-present
 ---
 

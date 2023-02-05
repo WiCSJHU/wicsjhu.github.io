@@ -2,7 +2,8 @@
 name: Shreya Wadhwa
 position: Chair
 photo: assets/images/members/shreya.jpg
-membership: 2021-present
+status: active
+membership: 2020-present
 ---
 
 CS and Cog Sci junior, currently discovering her love for ‘Vision’ research.
