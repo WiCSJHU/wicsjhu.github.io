@@ -42,7 +42,8 @@ h2 {
     width: max-content;
     margin-top: 2em;
     margin-bottom: 1em;
-    border-bottom: 2px solid $primary-color-light;
+    padding-left: .5em;
+    border-left: 4px solid $primary-color-light;
     text-transform: lowercase;
 }
 
@@ -137,6 +138,65 @@ iframe {
     .navbar li { 
         width: 1.2em;
         overflow: hidden;
+    }
+}
+
+.landing-photo-square {
+    width: 200px;
+    border-radius: 1em;
+}
+
+@include viewport-medium {
+    .landing-photo-square {
+        width: 100px;
+    }
+}
+
+.landing-header-content-wrapper {
+    max-width: 50%;
+
+    h1 {
+        line-height: 1.5em;
+        font-weight: 400;
+        border: none;
+        margin: 0;
+    }
+}
+
+@include viewport-large {
+    .landing-header-content-wrapper {
+        h1 {
+            font-size: 1.5em;
+        }
+    }
+}
+
+@include viewport-medium {
+    .landing-header-content-wrapper {
+        h1 {
+            font-size: 1.25em;
+            font-weight: 500;
+        }
+    }
+}
+
+@include viewport-small {
+    .landing-header-content-wrapper {
+        max-width: 100%;
+    }
+}
+
+.flex-wrapper {
+    margin-top: 2em;
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+@include viewport-small {
+    .flex-wrapper {
+        flex-direction: column;
+        align-items: start;
     }
 }
 

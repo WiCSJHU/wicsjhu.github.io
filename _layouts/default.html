@@ -4,9 +4,15 @@
     <div class="page-container">
         <body>
             {% include navbar.html %}
+            {% if page.header %}
+                {% assign matching_headers = site.headers | where: 'id', page.header %}
+                {% assign header = matching_headers[0] %}
+                {% include landing_header.html header=header %}
+            {% else %}
             <header class="content-wrapper">
                 <h1>{{ page.title }}</h1>
             </header>
+            {% endif %}
             <main class="content-wrapper">
                 {{ content }}
             </main>
@@ -18,6 +24,7 @@
                 const target = e.currentTarget;
                 target.parentElement.classList.toggle('open');
             });
+            stepTitle.parentElement.classList.toggle('open');
         }
     </script>
 </html>
