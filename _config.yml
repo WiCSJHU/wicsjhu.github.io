@@ -32,7 +32,7 @@ keywords: >-
   ACM-Women,
   Johns Hopkins University,
   JHU
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://wicsjhu.github.io" # the base hostname & protocol for your site
 github_username: wicsjhu
 collections:
@@ -40,6 +40,7 @@ collections:
         order:
         - welcome.md
         - events.md
+        - sponsors.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.

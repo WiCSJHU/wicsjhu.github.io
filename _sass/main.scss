@@ -1,7 +1,7 @@
 body {
     font-family: $font-family-body;
     font-size: 16px;
-    line-height: 1.25em;
+    line-height: 1.5em;
     display: flex;
     justify-content: center;
 }
@@ -49,4 +49,16 @@ h2 {
 
 iframe {
     margin: 2em 0;
+}
+
+.sponsors-wrapper {
+    margin: 2em 0;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+
+    img {
+        height: 50px;
+        overflow: hidden;
+    }
 }
