@@ -16,7 +16,7 @@ body {
 
 .page-container {
     width: 100%;
-    max-width: 700px;
+    max-width: 900px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -26,12 +26,12 @@ section {
     padding: 2em;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 h1 {
     font-family: $font-family-title;
     font-size: 2em;
+    color: $wics-blue;
     margin-bottom: 1em;
     text-transform: uppercase;
     text-align: center;
@@ -41,20 +41,36 @@ h2 {
     font-family: $font-family-title;
     font-size: 1.5em;
     padding-bottom: .5em;
+    width: 100%;
     margin-bottom: 1em;
-    align-self: center;
-    width: max-content;
-    border-bottom: 3px solid $accent-color;
+    border-bottom: 3px solid $wics-blue;
+}
+
+h3 {
+    font-family: $font-family-title;
+    font-size: 1.25em;
+}
+
+p, ol, ul {
+    margin-bottom: 1em;
+}
+
+p:last-of-type {
+    margin-bottom: 0;
+}
+
+a {
+    color: #222;
 }
 
 iframe {
     margin: 2em 0;
 }
 
-.flex-wrapper {
+.grid-wrapper {
     margin: 2em 0;
-    display: flex;
-    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 2em;
 
     img {
@@ -78,5 +94,44 @@ iframe {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        height: $member-photo-height;
+        width: $member-photo-height;
+        border-radius: 100%;
+        overflow: hidden;
+    }
+    .member-icon-wrapper {
+        height: $member-photo-height;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .member-icon {
+        font-size: 5em;
+        width: max-content;
+        color: $accent-color;
+    }
+    .member-info {
+        text-align: center;
+        margin-top: 1em;
+    }
+    .member-position {
+        font-size: .85em;
+        color: #444;
+    }
+    .member-bio {
+        margin-top: 1em;
     }
 }

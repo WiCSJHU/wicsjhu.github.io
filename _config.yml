@@ -42,6 +42,13 @@ collections:
         - events.md
         - sponsors.md
         - contact.md
+    members:
+        order:
+        - shreya.md
+        - anney.md
+        - minseo.md
+        - ujvala.md
+        - stella.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.

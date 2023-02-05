@@ -1,8 +1,8 @@
 - name: Accenture
-  logo: assets/images/accenture.png
+  logo: assets/images/sponsors/accenture.png
 - name: Bloomberg
-  logo: assets/images/bloomberg.png
+  logo: assets/images/sponsors/bloomberg.png
 - name: Jane Street
-  logo: assets/images/janestreet.png
+  logo: assets/images/sponsors/janestreet.png
 - name: Google
-  logo: assets/images/google.png
+  logo: assets/images/sponsors/google.png

@@ -5,7 +5,7 @@
 
 Questions about joining? Want to become a sponsor? Reach out and say hello!
 
-<div class="flex-wrapper">
+<div class="grid-wrapper">
 {% for contact in site.data.contacts %}
     <article class="contact">
         <span class="material-symbols-outlined contact-icon">{{ contact.icon }}</span>
