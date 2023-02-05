@@ -13,6 +13,19 @@ To add a member:
 1. Add a file under `_members`
 2. Optional: Add a photo under `assets/images/members` and link in member file
 
+Example:
+
+```
+---
+name: Ada Lovelace
+position: Chair # optional field
+photo: assets/images/members/ada.png # optional field
+alum: true # optional field
+membership: 2023-present # optional field
+---
+This is a short sentence about Ada!
+```
+
 > Tip: Use the order list in `_config.yml` to order the exec members first!
 All other members will appear in alphabetical file order.
 

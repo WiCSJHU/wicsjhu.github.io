@@ -341,10 +341,22 @@ iframe {
         margin: 1em 0;
     }
     .member-position {
+        display: block;
         font-family: $font-family-title;
         text-transform: lowercase;
-        font-size: .85em;
+        font-size: .9em;
         color: $gray;
+    }
+    .member-dates, .member-alum {
+        font-family: $font-family-title;
+        color: $gray;
+        font-weight: 400;
+        font-size: .7em;
+        line-height: .8em;
+        background: #eee;
+        border-radius: 5px;
+        margin-right: 2px;
+        padding: 0 .35em;
     }
 }
 

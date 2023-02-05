@@ -12,8 +12,17 @@
 
     <div class="member-info">
         <h3>{{ member.name }}</h3>
+
         {% if member.position %}
         <span class="member-position">{{ member.position }}</span>
+        {% endif %}
+
+        {% if member.alum %}
+        <span class="member-alum">alum</span>
+        {% endif %}
+
+        {% if member.membership %}
+        <span class="member-dates">{{ member.membership }}</span>
         {% endif %}
     </div>
 
