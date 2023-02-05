@@ -24,11 +24,29 @@ body {
 
 section {
     padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
     font-family: $font-family-title;
     font-size: 2em;
-    line-height: 1.15em;
-    margin-bottom: .25em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-family: $font-family-title;
+    font-size: 1.5em;
+    padding-bottom: .5em;
+    margin-bottom: 1em;
+    align-self: center;
+    width: max-content;
+    border-bottom: 3px solid #f4623a;
+}
+
+iframe {
+    margin: 2em 0;
 }
