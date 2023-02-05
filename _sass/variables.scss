@@ -45,6 +45,8 @@ $body-width-large: 700px;
 $body-width-medium: 500px;
 $body-width-small: 400px;
 
+$transition-default: all .35s ease;
+
 @mixin viewport-large {
     @media screen and (max-width: $body-width-large) {
         @content;

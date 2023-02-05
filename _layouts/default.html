@@ -12,4 +12,12 @@
             </main>
         </body>
     </div>
+    <script>
+        for (let stepTitle of document.getElementsByClassName('step-title')) {
+            stepTitle.addEventListener('click', (e) => {
+                const target = e.currentTarget;
+                target.parentElement.classList.toggle('open');
+            });
+        }
+    </script>
 </html>
