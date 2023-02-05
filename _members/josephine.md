@@ -1,6 +1,7 @@
 ---
 name: Josephine Deng
 photo: assets/images/members/josephine.png
+membership: 2022-present
 ---
 
 CS freshman who adores cats but is allergic.
