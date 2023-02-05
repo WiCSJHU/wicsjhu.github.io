@@ -179,6 +179,8 @@ iframe {
 
 @include viewport-medium {
     .landing-header-content-wrapper {
+        max-width: 100%;
+
         h1 {
             font-size: 1.25em;
             font-weight: 500;
@@ -186,20 +188,15 @@ iframe {
     }
 }
 
-@include viewport-small {
-    .landing-header-content-wrapper {
-        max-width: 100%;
-    }
-}
-
 .flex-wrapper {
     margin-top: 2em;
     display: flex;
+    flex-direction: row;
     gap: 2em;
     align-items: center;
 }
 
-@include viewport-small {
+@include viewport-medium {
     .flex-wrapper {
         flex-direction: column;
         align-items: start;
