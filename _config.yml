@@ -40,6 +40,7 @@ collections:
         order:
         - welcome.md
         - events.md
+        - members.md
         - sponsors.md
         - contact.md
     members:
