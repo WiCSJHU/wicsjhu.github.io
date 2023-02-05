@@ -1,0 +1,18 @@
+<nav class="navbar">
+    {%- if page.url == "/" -%}
+    <div class="nav-title">WiCS@JHU</div>
+    {%- else -%}
+    <div class="nav-title nav-link"><a href="{{ "/" | relative_url }}">WiCS@JHU</a></div>
+    {%- endif -%}
+
+    <ol>
+    {%- for item in site.data.nav -%}
+    {%- assign url = page.url | remove: ".html" -%}
+    {%- if item.url == url -%}
+        <li>{{ item.title }}</li>
+        {%- else -%}
+        <li class="nav-link"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+        {%- endif -%}
+    {%- endfor -%}
+    </ol>
+</nav>

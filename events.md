@@ -1,9 +1,11 @@
 ---
+title: Events
+layout: default
 ---
-## Events
 
 Add our calendar to your Google account to keep tabs on events for WiCS
 (and ACM, our partner organization and the other major CS group on campus).
+
 We also announce all WiCS events via our
 [mailing list](https://www.cs.jhu.edu/mailman/listinfo/wics)
 and [Facebook group](https://www.facebook.com/groups/1630841103836563/).

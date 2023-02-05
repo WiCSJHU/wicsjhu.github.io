@@ -1,7 +1,7 @@
 ---
+title: Members
+layout: default
 ---
-
-## Members
 
 <div class="grid-wrapper">
 {% for member in site.members %}
@@ -19,10 +19,10 @@
             {% if member.position %}
             <span class="member-position">{{ member.position }}</span>
             {% endif %}
+        </div>
 
-            <div class="member-bio">
-                {{ member.content | markdownify }}
-            </div>
+        <div class="member-bio">
+            {{ member.content | markdownify }}
         </div>
     </article>
 {% endfor %}
