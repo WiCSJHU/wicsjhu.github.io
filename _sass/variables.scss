@@ -1,0 +1,66 @@
+$font-family-title: 'Roboto Mono', Georgia, serif;
+$font-family-body: 'Roboto', Helvetica, sans-serif;
+
+$wics-blue: #70b1e2;
+$wics-blue-light: #c2ddf3;
+$wics-blue-dark: #1f6397;
+
+$gray: #777;
+$gray-light: #aaa;
+$gray-dark: #222;
+
+$red: #f26259;
+$red-light: #fbc9c6;
+$red-dark: #a1150d;
+
+$orange: #f8972b;
+$orange-light: #fef4e9;
+$orange-dark: #e17a07;
+
+$yellow: #ffc60e;
+$yellow-light: #fff0bf;
+$yellow-dark: #bf9100;
+
+$green: #47bda1;
+$green-light: #d7f1eb;
+$green-dark: #2b7765;
+
+$blue: $wics-blue;
+$blue-light: $wics-blue-light;
+$blue-dark: $wics-blue-dark;
+
+$purple: #bd6aaa;
+$purple-light: #f3e4f0;
+$purple-dark: #7b366b;
+
+$primary-color: $blue;
+$primary-color-light: $blue-light;
+$primary-color-dark: $blue-dark;
+
+$member-photo-height: 120px;
+$header-height: 200px;
+
+$body-width-max: 900px;
+$body-width-large: 700px;
+$body-width-medium: 500px;
+$body-width-small: 400px;
+
+$transition-default: all .35s ease;
+
+@mixin viewport-large {
+    @media screen and (max-width: $body-width-large) {
+        @content;
+    }
+}
+
+@mixin viewport-medium {
+    @media screen and (max-width: $body-width-medium) {
+        @content;
+    }
+}
+
+@mixin viewport-small {
+    @media screen and (max-width: $body-width-small) {
+        @content;
+    }
+}

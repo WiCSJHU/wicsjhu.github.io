@@ -1,0 +1,9 @@
+{% assign header = include.header %}
+<header class="content-wrapper flex-wrapper">
+    <img src="{{ header.photo-url | relative_url }}" alt="{{ header.photo-alt }}"
+         class="landing-photo-square" />
+    <div class="landing-header-content-wrapper">
+        <h1>{{ header.title }}</h1>
+        {{ header.content }}
+    </div>
+</header>

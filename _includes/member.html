@@ -1,0 +1,40 @@
+{% assign member = include.member %}
+
+{% assign classes = '' %}
+{% if member.position %}
+    {% assign pos = member.position | downcase | split: ' ' | join: '-' %}
+    {% assign classes = classes | append: ' ' | append: pos %}
+{% endif %}
+{% if member.status %}
+    {% assign classes = classes | append: ' ' | append: member.status %}
+{% endif %}
+
+<article class="member{{ classes }}">
+    {% if member.photo %}
+    <img src="{{ member.photo }}" alt="Photo of {{ member.name }}" />
+    {% else %}
+    <div class="member-icon-wrapper">
+        <span class="material-symbols-outlined member-icon">favorite</span>
+    </div>
+    {% endif %}
+
+    <div class="member-info">
+        <h3>{{ member.name }}</h3>
+
+        {% if member.position %}
+        <span class="member-position">{{ member.position }}</span>
+        {% endif %}
+
+        {% if member.status %}
+        <span class="member-status">{{ member.status }}</span>
+        {% endif %}
+
+        {% if member.membership %}
+        <span class="member-dates">{{ member.membership }}</span>
+        {% endif %}
+    </div>
+
+    <div class="member-bio">
+        {{ member.content | markdownify }}
+    </div>
+</article>

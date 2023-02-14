@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include head.html %}
+    <div class="page-container">
+        <body>
+            {% include navbar.html %}
+            {% if page.header %}
+                {% assign matching_headers = site.headers | where: 'id', page.header %}
+                {% assign header = matching_headers[0] %}
+                {% include landing_header.html header=header %}
+            {% else %}
+            <header class="content-wrapper">
+                <h1>{{ page.title }}</h1>
+                {% if page.subtitle %}
+                    <span class="subtitle">{{ page.subtitle }}</span>
+                {% endif %}
+            </header>
+            {% endif %}
+            <main class="content-wrapper">
+                {{ content }}
+            </main>
+        </body>
+    </div>
+    <script>
+        for (let stepTitle of document.getElementsByClassName('step-title')) {
+            stepTitle.addEventListener('click', (e) => {
+                const target = e.currentTarget;
+                target.parentElement.classList.toggle('open');
+            });
+        }
+    </script>
+</html>
