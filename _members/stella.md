@@ -1,8 +1,8 @@
 ---
 name: Stella Huo
 position: Secretary
-status: active
-membership: 2022-present
+status: alum
+membership: 2022-2026
 ---
 
 Sophomore majoring in Computer Science and Cognitive Science.

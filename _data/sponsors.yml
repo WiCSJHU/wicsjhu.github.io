@@ -1,8 +1,11 @@
-- name: Accenture
-  logo: assets/images/sponsors/accenture.png
-- name: Bloomberg
-  logo: assets/images/sponsors/bloomberg.png
 - name: Jane Street
   logo: assets/images/sponsors/janestreet.png
-- name: Google
-  logo: assets/images/sponsors/google.png
+- name: Bloomberg
+  logo: assets/images/sponsors/bloomberg.png
+- name: Visa
+  logo: assets/images/sponsors/visa.svg
+- name: Deloitte
+  logo: assets/images/sponsors/deloitte.svg
+- name: Stevens Capital Management
+- name: Center for Bioengineering Innovation and Design (CBID)
+- name: Johns Hopkins Computer Science Department

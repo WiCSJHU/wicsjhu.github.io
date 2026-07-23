@@ -1,8 +1,8 @@
 ---
 name: Sola Oladosu
 photo: assets/images/members/sola.png
-status: active
-membership: 2022-present
+status: alum
+membership: 2022-2026
 ---
 
 Freshman majoring in CS.

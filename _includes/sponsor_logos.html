@@ -1,5 +1,10 @@
 <div class="grid-wrapper">
-{% for sponsor in site.data.sponsors %}
+{% assign logos = include.collection | default: site.data.sponsors %}
+{% for sponsor in logos %}
+{% if sponsor.logo %}
 <img src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.name }}" />
+{% else %}
+<span class="chip">{{ sponsor.name }}</span>
+{% endif %}
 {% endfor %}
 </div>

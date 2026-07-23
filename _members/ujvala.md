@@ -2,8 +2,8 @@
 name: Ujvala Pradeep
 position: Treasurer
 photo: assets/images/members/ujvala.png
-status: active
-membership: 2022-present
+status: alum
+membership: 2022-2026
 ---
 
 Junior majoring in CS and Cognitive Science.

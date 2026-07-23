@@ -1,7 +1,7 @@
 ---
 name: Daya Lu
 photo: assets/images/members/daya.jpg
-status: active
+status: alum
 membership: 2016-2020
 ---
 CS junior interested in front-end and design;

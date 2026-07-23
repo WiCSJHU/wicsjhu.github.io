@@ -2,8 +2,8 @@
 name: Anney Ye
 position: Vice Chair
 photo: assets/images/members/anney.png
-status: active
-membership: 2021-present
+status: alum
+membership: 2021-2026
 ---
 
 A sophomore majoring in CS and Biophysics.

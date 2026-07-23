@@ -1,6 +1,6 @@
 ---
 name: Muxi Lyu
-status: active
+status: alum
 ---
 
 :)
